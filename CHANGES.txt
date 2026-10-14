@@ -1,0 +1,32 @@
+Changes in this version
+1. Removed the Monitoring and Quick run (Find duplicates) pages from the UI.
+2. Final Master Data now includes distinct (single-record) entities automatically; merged entities still need approval.
+3. Steward Review and Final Master Data endpoints are paged and no longer issue per-row queries; DB indexes added.
+4. Incoming Data single-record form shows every canonical field configured for the selected domain.
+Not included (recreate locally): backend/.venv, frontend/node_modules, .git.
+
+Survivorship: source system + last-updated (this version)
+5. `source_system` and `last_updated` are now canonical fields (customer + supplier), flagged
+   metadata_hint=True. Columns named source / source_system / system of record and
+   last_updated / updated_at / last_modified ... auto-map on the Map step.
+6. Profiling never recommends those two as ER MATCH/IDENTIFIER fields (LOW_VALUE_FOR_ER, "record metadata").
+7. Survivorship: recency_field defaults to `last_updated` (a stored None no longer wipes it); timestamps
+   parse ISO plus common regional formats, with a day-first / month-first switch (timestamp_dayfirst).
+   Lineage and conflicts now carry source_system + source_updated_at. The two metadata fields drive the
+   rules and lineage but are not themselves golden-record values.
+8. New endpoint GET /api/domains/{domain}/survivorship/detected: source systems found in the data, whether
+   the timestamp field is mapped, and the % of timestamps that parse. PUT validates recency_field.
+9. /find-duplicates/.../groups also returns mapping, metadata_fields, source_system_field, recency_field.
+
+UI
+10. Responsive shell: navigation rail is now an off-canvas drawer (hamburger) below 900px instead of
+    disappearing; workspace is fluid and centred; rail scrolls on short screens; fixed pixel widths removed.
+11. Clustered records: card per cluster with match-score meter, source chips, "N fields differ", and a
+    field-by-field comparison (one column per record, differing values highlighted, most recent record
+    flagged, "only fields that differ", filter, expand/collapse all, keyboard accessible).
+12. Survivorship Rules screen: shows what the data offers (detected source systems, timestamp parse rate),
+    recency-field selector, one-click add of detected source systems, lifecycle stepper, sticky action bar.
+13. Golden Record rows show the winning source system + timestamp and the same for each conflicting value.
+
+Sample data: backend/sample_data/{customer,supplier}_500_realistic_mdm.csv (used by
+backend/tests/test_survivorship_source_and_recency.py).

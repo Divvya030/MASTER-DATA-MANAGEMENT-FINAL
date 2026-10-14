@@ -1,0 +1,304 @@
+{
+  "model_format_version": 1,
+  "training_run_id": "TR-V1-SUPPLIER",
+  "domain": "supplier",
+  "model_version": "v1.0.0",
+  "source_dataset_id": "BUNDLED-V1",
+  "er_config_version": "bundled-v1",
+  "match_fields": [
+    "supplier_name",
+    "legal_name",
+    "email",
+    "phone",
+    "address",
+    "city",
+    "postal_code",
+    "country",
+    "duns",
+    "tax_identifier",
+    "registration_number"
+  ],
+  "field_types": {
+    "supplier_name": "String",
+    "legal_name": "String",
+    "email": "String",
+    "phone": "String",
+    "address": "String",
+    "city": "String",
+    "postal_code": "Exact",
+    "country": "Exact",
+    "duns": "Exact",
+    "tax_identifier": "Exact",
+    "registration_number": "Exact"
+  },
+  "identifier_fields": [
+    "duns",
+    "tax_identifier",
+    "registration_number"
+  ],
+  "name_fields": [
+    "supplier_name",
+    "legal_name"
+  ],
+  "threshold": 0.75,
+  "review_threshold": 0.6,
+  "threshold_calibration": "CALIBRATED_ON_VALIDATION_SPLIT",
+  "source_mapping": {
+    "supplier_name": "supplier_name",
+    "legal_name": "legal_name",
+    "email": "email",
+    "phone": "phone",
+    "address": "address_line_1",
+    "city": "city",
+    "postal_code": "postal_code",
+    "country": "country",
+    "duns": "duns",
+    "tax_identifier": "tax_identification_number",
+    "registration_number": "registration_number"
+  },
+  "created_at": "2026-10-04T06:50:05.874985+00:00",
+  "dependency_versions": {
+    "python": "3.12.3",
+    "dedupe": "3.0.3",
+    "BTrees": "6.4",
+    "numpy": "2.4.4",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "persistent": "6.8"
+  },
+  "training_summary": {
+    "threshold": 0.75,
+    "review_threshold": 0.6,
+    "threshold_calibration": "CALIBRATED_ON_VALIDATION_SPLIT",
+    "train_seconds": 136.1,
+    "training_pairs": {
+      "match": 3207,
+      "distinct": 9640,
+      "original": 4000,
+      "identifiers_masked": 4000,
+      "address_masked": 2440,
+      "name_contact_only": 2407
+    },
+    "learned_predicates": [
+      "(SimplePredicate: (suffixArray, phone), ExistsPredicate: (Exists, tax_identifier), ExistsPredicate: (Exists, city))",
+      "SimplePredicate: (fingerprint, legal_name)",
+      "(SimplePredicate: (sameFiveCharStartPredicate, address), ExistsPredicate: (Exists, registration_number))"
+    ],
+    "records_total": 10000,
+    "entities_total": 7200,
+    "split_records": {
+      "test": 1965,
+      "train": 6023,
+      "validation": 2012
+    },
+    "split_entities": {
+      "train": 4367,
+      "validation": 1432,
+      "test": 1401
+    },
+    "total_seconds": 144.8
+  },
+  "evaluation_summary": {
+    "full_record": {
+      "validation": {
+        "true_positives": 580,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "precision_ci95": [
+          0.9934,
+          1.0
+        ],
+        "recall_ci95": [
+          0.9934,
+          1.0
+        ],
+        "true_pairs": 580,
+        "blocking_recall": 1.0,
+        "blocking_reduction_pct": 99.589
+      },
+      "test": {
+        "true_positives": 564,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "precision_ci95": [
+          0.9932,
+          1.0
+        ],
+        "recall_ci95": [
+          0.9932,
+          1.0
+        ],
+        "true_pairs": 564,
+        "blocking_recall": 1.0,
+        "blocking_reduction_pct": 99.585
+      }
+    },
+    "identifiers_hidden": {
+      "validation": {
+        "true_positives": 577,
+        "false_positives": 0,
+        "false_negatives": 3,
+        "precision": 1.0,
+        "recall": 0.9948,
+        "f1": 0.9974,
+        "precision_ci95": [
+          0.9934,
+          1.0
+        ],
+        "recall_ci95": [
+          0.9849,
+          0.9982
+        ],
+        "true_pairs": 580,
+        "blocking_recall": 1.0,
+        "blocking_reduction_pct": 99.589
+      },
+      "test": {
+        "true_positives": 560,
+        "false_positives": 2,
+        "false_negatives": 4,
+        "precision": 0.9964,
+        "recall": 0.9929,
+        "f1": 0.9947,
+        "precision_ci95": [
+          0.9871,
+          0.999
+        ],
+        "recall_ci95": [
+          0.9819,
+          0.9972
+        ],
+        "true_pairs": 564,
+        "blocking_recall": 1.0,
+        "blocking_reduction_pct": 99.585
+      }
+    },
+    "identifiers_and_contact_hidden": {
+      "validation": {
+        "true_positives": 540,
+        "false_positives": 7,
+        "false_negatives": 40,
+        "precision": 0.9872,
+        "recall": 0.931,
+        "f1": 0.9583,
+        "precision_ci95": [
+          0.9738,
+          0.9938
+        ],
+        "recall_ci95": [
+          0.9074,
+          0.9489
+        ],
+        "true_pairs": 580,
+        "blocking_recall": 0.9983,
+        "blocking_reduction_pct": 99.59
+      },
+      "test": {
+        "true_positives": 521,
+        "false_positives": 20,
+        "false_negatives": 43,
+        "precision": 0.963,
+        "recall": 0.9238,
+        "f1": 0.943,
+        "precision_ci95": [
+          0.9436,
+          0.9759
+        ],
+        "recall_ci95": [
+          0.8989,
+          0.9429
+        ],
+        "true_pairs": 564,
+        "blocking_recall": 0.9982,
+        "blocking_reduction_pct": 99.586
+      }
+    },
+    "address_hidden": {
+      "validation": {
+        "true_positives": 579,
+        "false_positives": 0,
+        "false_negatives": 1,
+        "precision": 1.0,
+        "recall": 0.9983,
+        "f1": 0.9991,
+        "precision_ci95": [
+          0.9934,
+          1.0
+        ],
+        "recall_ci95": [
+          0.9903,
+          0.9997
+        ],
+        "true_pairs": 580,
+        "blocking_recall": 0.9983,
+        "blocking_reduction_pct": 99.592
+      },
+      "test": {
+        "true_positives": 561,
+        "false_positives": 0,
+        "false_negatives": 3,
+        "precision": 1.0,
+        "recall": 0.9947,
+        "f1": 0.9973,
+        "precision_ci95": [
+          0.9932,
+          1.0
+        ],
+        "recall_ci95": [
+          0.9845,
+          0.9982
+        ],
+        "true_pairs": 564,
+        "blocking_recall": 0.9947,
+        "blocking_reduction_pct": 99.587
+      }
+    },
+    "address_and_identifiers_hidden": {
+      "validation": {
+        "true_positives": 436,
+        "false_positives": 3,
+        "false_negatives": 144,
+        "precision": 0.9932,
+        "recall": 0.7517,
+        "f1": 0.8557,
+        "precision_ci95": [
+          0.9801,
+          0.9977
+        ],
+        "recall_ci95": [
+          0.715,
+          0.7852
+        ],
+        "true_pairs": 580,
+        "blocking_recall": 0.9983,
+        "blocking_reduction_pct": 99.592
+      },
+      "test": {
+        "true_positives": 417,
+        "false_positives": 3,
+        "false_negatives": 147,
+        "precision": 0.9929,
+        "recall": 0.7394,
+        "f1": 0.8476,
+        "precision_ci95": [
+          0.9792,
+          0.9976
+        ],
+        "recall_ci95": [
+          0.7016,
+          0.7739
+        ],
+        "true_pairs": 564,
+        "blocking_recall": 0.9947,
+        "blocking_reduction_pct": 99.587
+      }
+    }
+  },
+  "provenance": "OFFLINE_BUILD scripts/build_v1_models.py"
+}

@@ -1,0 +1,11 @@
+{
+ "status": "NOT ADOPTED",
+ "what_was_tried": "Customer retrain adding (a) real-data hard negatives (same building, unrelated company names; only 114 such pairs exist), (b) realistic name/address variation using the public cleanco legal-form list, (c) the 111 decided assistant-reviewed pairs as real-data evidence (matches x3, distincts x2).",
+ "evaluation": "Group-wise 2-fold cross-fit on the reviewed pairs: records and company families of the held-out fold never appear in that fold's training data; band-weighted metrics.",
+ "result_from_build_log": {
+   "new_model_best_threshold": 0.9, "new_precision": 0.6443, "new_recall": 0.8394, "new_f0_5": 0.6757, "new_estimated_false_merges": 385.5,
+   "v1_0_at_0.65_precision": 0.7327, "v1_0_at_0.65_recall": 0.5283, "v1_0_at_0.65_f0_5": 0.6801, "v1_0_estimated_false_merges": 160.3},
+ "decision": "Not adopted: F0.5 did not improve, estimated false merges were ~2.4x higher, and the learned blocking (name 3-character-start predicates; every name in this file starts with 'A') exhausted memory on the full-file matching step. Higher recall alone is not an improvement for golden-record safety.",
+ "likely_reasons": ["only ~55 real labelled pairs per fold: too few to move a Dedupe classifier", "only 114 real same-building hard negatives", "assistant-reviewed labels are not human ground truth"],
+ "code": "backend/scripts/v1_build/customer_v11_build.py (run with CUSTOMER_V11_EXPERIMENT=1); augment.py"
+}

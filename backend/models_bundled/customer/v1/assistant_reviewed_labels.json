@@ -1,0 +1,3208 @@
+{
+ "label_source": "ASSISTANT_REVIEWED",
+ "warning": "These labels were assigned by the AI assistant reviewing the records as a data steward would. They are NOT human ground truth and must never be stored or reported as REAL_STEWARD. Treat them as a documented, reviewable starting point; a human steward should audit them (re-label in the Steward Review screen) before they are used for production calibration.",
+ "sampling": "160 candidate pairs from customer.csv, stratified by Customer-V1 score band (up to 32 per band: 0.20-0.45, 0.45-0.65, 0.65-0.80, 0.80-0.95, >=0.95). Not a random sample: prevalence differs from the file.",
+ "unsure_policy": "UNSURE = parent/subsidiary, division, department or same-site-different-unit cases; excluded from training and metrics.",
+ "pairs": [
+  {
+   "a_row": 6233,
+   "b_row": 6243,
+   "v1_score": 0.64,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Allegheny Energy Solutions, Inc.",
+    "address": "100 Brush Run Rd",
+    "city": "Greensburg",
+    "postal_code": "15601",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Allegheny Power",
+    "address": "800 Cabin Hill Dr",
+    "city": "Greensburg",
+    "postal_code": "15601",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 5917,
+   "b_row": 5974,
+   "v1_score": 0.989,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Aliments Ultima Yoplait",
+    "address": "2177 Boul Fernand Lafontaine",
+    "city": "Longueuil",
+    "postal_code": "J4G 2V2",
+    "country": "Ca"
+   },
+   "B": {
+    "customer_name": "Aliz\u00e3\u2030",
+    "address": "2177 Boul Fernand Lafontaine",
+    "city": "Longueuil",
+    "postal_code": "J4G 2V2",
+    "country": "Ca"
+   }
+  },
+  {
+   "a_row": 9747,
+   "b_row": 9797,
+   "v1_score": 0.369,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "American Express Company Sa De Cv",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   },
+   "B": {
+    "customer_name": "American Express",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   }
+  },
+  {
+   "a_row": 513,
+   "b_row": 521,
+   "v1_score": 0.324,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Advocate",
+    "address": "5475 Rings Rd",
+    "city": "Dublin",
+    "postal_code": "43017",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Advocate Christ Medical Center",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   }
+  },
+  {
+   "a_row": 6658,
+   "b_row": 6687,
+   "v1_score": 0.303,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Alliant",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alliant Techsystems Inc Veba Trust",
+    "address": "4700 Nathan Ln N",
+    "city": "Minneapolis",
+    "postal_code": "55442",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 1029,
+   "b_row": 1040,
+   "v1_score": 0.924,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Aeropuerto Internacional De La Ciudad De Mexico Sa De Cv",
+    "address": "Capit\u00e3\uf181n Carlos Le\u00e3\u201cn 117 S/n",
+    "city": "Ciudad De M\u00e3\u2030xico",
+    "postal_code": "15620",
+    "country": "Mx"
+   },
+   "B": {
+    "customer_name": "Aeropuertos Y Servicios Auxiliares",
+    "address": "Capit\u00e3\uf181n Carlos Le\u00e3\u201cn 117 S/n",
+    "city": "Ciudad De M\u00e3\u2030xico",
+    "postal_code": "15620",
+    "country": "Mx"
+   }
+  },
+  {
+   "a_row": 9827,
+   "b_row": 9829,
+   "v1_score": 0.553,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "American Family Insurance",
+    "address": "302 N Walbridge Ave",
+    "city": "Madison",
+    "postal_code": "53714",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Family Insurance",
+    "address": "6000 American Pkwy",
+    "city": "Madison",
+    "postal_code": "53783",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 1985,
+   "b_row": 1990,
+   "v1_score": 0.587,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Agilent Technologies Inc",
+    "address": "Cp 11 8 Agilent Technologies Int P Ltd",
+    "city": "Haryana",
+    "postal_code": "122051",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Agilent Technologies India Private Limited",
+    "address": "Cp-11, Sector 8",
+    "city": "Gurgaon",
+    "postal_code": "122051",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 1418,
+   "b_row": 1707,
+   "v1_score": 0.65,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Afg Glass",
+    "address": "20400 Webster St",
+    "city": "Spring Hill",
+    "postal_code": "66083",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Agc",
+    "address": "20400 North Webster",
+    "city": "Spring Hill",
+    "postal_code": "66083",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 1900,
+   "b_row": 1905,
+   "v1_score": 0.326,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Agfirst",
+    "address": null,
+    "city": "Columbia",
+    "postal_code": "29201",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Agfirst Farm Credit Bank",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   }
+  },
+  {
+   "a_row": 5374,
+   "b_row": 5375,
+   "v1_score": 0.768,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Aldine Independent School District",
+    "address": "2520 Ww Thorne Blvd",
+    "city": "Houston",
+    "postal_code": "77073",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Aldine Isd",
+    "address": null,
+    "city": "Houston",
+    "postal_code": "77032",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 5352,
+   "b_row": 5353,
+   "v1_score": 0.723,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Alderwoods Group",
+    "address": "Suite 1029",
+    "city": "Burnaby",
+    "postal_code": "V5H 4M2",
+    "country": "Ca"
+   },
+   "B": {
+    "customer_name": "Alderwoods Group Canada Inc",
+    "address": "4333 Still Creek Dr",
+    "city": "Burnaby",
+    "postal_code": "V5C 6S6",
+    "country": "Ca"
+   }
+  },
+  {
+   "a_row": 8959,
+   "b_row": 8981,
+   "v1_score": 0.892,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Amazon Seattle Aws",
+    "address": "410 Terry Ave N",
+    "city": "Seattle",
+    "postal_code": "98109",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Amazon Web Services, Inc.",
+    "address": "410 Terry Ave N",
+    "city": "Seattle",
+    "postal_code": "98109",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 533,
+   "b_row": 535,
+   "v1_score": 0.799,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Advocate Illinois Masonic",
+    "address": "836 W Wellington Ave",
+    "city": "Chicago",
+    "postal_code": "60657",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Advocate Llinois Masonic",
+    "address": "3000 N Halsted St",
+    "city": "Chicago",
+    "postal_code": "60657",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 9431,
+   "b_row": 9665,
+   "v1_score": 0.211,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "America",
+    "address": "Usa - Usa",
+    "city": "Usa",
+    "postal_code": "38294",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Commercial Barge Line LLC",
+    "address": "1701 E Market St",
+    "city": "Jeffersonville",
+    "postal_code": "47130",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 4406,
+   "b_row": 4848,
+   "v1_score": 0.862,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Ak Native Tribal Health Center",
+    "address": "4315 Diplomacy Dr",
+    "city": "Anchorage",
+    "postal_code": "99508",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alaska Native Medical Center",
+    "address": "4315 Diplomacy Dr",
+    "city": "Anchorage",
+    "postal_code": "99508",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 6279,
+   "b_row": 6285,
+   "v1_score": 0.66,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Allegis Group",
+    "address": "7317 Parkway Drive",
+    "city": "Hanover",
+    "postal_code": "21076",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Allegis Mcr Various",
+    "address": null,
+    "city": "Hanover",
+    "postal_code": "21076",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 3673,
+   "b_row": 3878,
+   "v1_score": 0.77,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Air Stream Air Conditioning Corp.",
+    "address": "246 Park Ave",
+    "city": "New Hyde Park",
+    "postal_code": "11040",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Airvel Air Conditioning Corp",
+    "address": "246 Broadway",
+    "city": "New Hyde Park",
+    "postal_code": "11040",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 5377,
+   "b_row": 5380,
+   "v1_score": 0.988,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Aldine Isd",
+    "address": "2520 W. Thorne Blvd",
+    "city": "Houston",
+    "postal_code": "77032",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Aldine Isd-elem Sch Region 1",
+    "address": "2520 Ww Thorne Blvd",
+    "city": "Houston",
+    "postal_code": "77073",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 524,
+   "b_row": 9183,
+   "v1_score": 0.615,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Advocate Consulting Group Inc",
+    "address": "158 W 29th St Fl 6",
+    "city": "New York",
+    "postal_code": "10001",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Amc Computrain Inc",
+    "address": "129 W 27th St Fl 11",
+    "city": "New York",
+    "postal_code": "10001",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 7430,
+   "b_row": 7431,
+   "v1_score": 0.977,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Allvia, Inc.",
+    "address": "657 N Pastoria Ave",
+    "city": "Sunnyvale",
+    "postal_code": "94085",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Allvia Inc Sid 110833",
+    "address": "657 N. Pastoria Ave",
+    "city": "Sunnyvale",
+    "postal_code": "94085",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 4215,
+   "b_row": 7415,
+   "v1_score": 0.78,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Ajvw Distribution (s) Pte Ltd",
+    "address": "1 Rochor Canal Road",
+    "city": "Singapore",
+    "postal_code": "188504",
+    "country": "Sg"
+   },
+   "B": {
+    "customer_name": "Alltronic Computer (s) Pte Ltd",
+    "address": "1 Rochor Canal Road",
+    "city": "Singapore",
+    "postal_code": "188504",
+    "country": "Sg"
+   }
+  },
+  {
+   "a_row": 3778,
+   "b_row": 3780,
+   "v1_score": 0.877,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Airtel Madagascar",
+    "address": "Immeuble Kube B Zone Galazy Andraharo",
+    "city": "Antananarivo",
+    "postal_code": "101",
+    "country": "Ma"
+   },
+   "B": {
+    "customer_name": "Airtel Madagascar S.a",
+    "address": "Airtel Building Explorer Business Park",
+    "city": "Antananarivo",
+    "postal_code": "101",
+    "country": "Ma"
+   }
+  },
+  {
+   "a_row": 1990,
+   "b_row": 1991,
+   "v1_score": 0.666,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Agilent Technologies India Private Limited",
+    "address": "Cp-11, Sector 8",
+    "city": "Gurgaon",
+    "postal_code": "122051",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Agilent Technologies (international) Private Limited",
+    "address": "Plot No. Cp-11, Sector- 8",
+    "city": "Gurgaon",
+    "postal_code": "122015",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 7086,
+   "b_row": 7550,
+   "v1_score": 0.782,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Allran Electric Of N.y., LLC",
+    "address": "120 Broadway Fl 36",
+    "city": "New York",
+    "postal_code": "10271",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alm Media, LLC",
+    "address": "120 Broadway Fl 5",
+    "city": "New York",
+    "postal_code": "10271",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 9580,
+   "b_row": 9665,
+   "v1_score": 0.933,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "American Barge Line Company",
+    "address": "1701 E Market St",
+    "city": "Jeffersonville",
+    "postal_code": "47130",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Commercial Barge Line LLC",
+    "address": "1701 E Market St",
+    "city": "Jeffersonville",
+    "postal_code": "47130",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 963,
+   "b_row": 973,
+   "v1_score": 0.921,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Aerojet",
+    "address": "Highway 50 And Aerojet",
+    "city": "Rancho Cordova",
+    "postal_code": "95742",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Aerojet Sid 171331",
+    "address": "2001 Aerojet Rd",
+    "city": "Rancho Cordova",
+    "postal_code": "95742",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 5095,
+   "b_row": 5099,
+   "v1_score": 0.657,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Albuquerque Housing Authority",
+    "address": "1840 University Blvd Se",
+    "city": "Albuquerque",
+    "postal_code": "87106",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Albuquerque Public School District",
+    "address": "725 University Blvd Se",
+    "city": "Albuquerque",
+    "postal_code": "87106",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 1204,
+   "b_row": 1206,
+   "v1_score": 0.565,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Aetna Inc",
+    "address": "23 Capitol Ave",
+    "city": "Hartford",
+    "postal_code": "6106",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Aetna, Inc.",
+    "address": null,
+    "city": "Hartford",
+    "postal_code": "6156",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 6332,
+   "b_row": 6333,
+   "v1_score": 0.956,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Allen County Juvenile Detention Center",
+    "address": null,
+    "city": "Fort Wayne",
+    "postal_code": "46808",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Allen County Juvie",
+    "address": "2929 Wells Street",
+    "city": "Fort Wayne",
+    "postal_code": "46808",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 5579,
+   "b_row": 5595,
+   "v1_score": 0.889,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Alexandria Dogs",
+    "address": "401 Courthouse Sq",
+    "city": "Alexandria",
+    "postal_code": "22314",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alexandria Public Schools - Isd 206",
+    "address": ".",
+    "city": "Alexandria",
+    "postal_code": "56308",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 6296,
+   "b_row": 6297,
+   "v1_score": 0.499,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Allegro Holding Corporation",
+    "address": "115 Ne Cutoff",
+    "city": "Worcester",
+    "postal_code": "1606",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Allegro Microsystems, Inc.",
+    "address": "115 Ne Cutoff",
+    "city": "Worcester",
+    "postal_code": "1606",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 9650,
+   "b_row": 9854,
+   "v1_score": 0.678,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "American College Of",
+    "address": "20 F Street, Nw",
+    "city": "Washington",
+    "postal_code": "20001",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Federation Of Teachers Afl-cio Aft Committee On Political",
+    "address": "555 New Jersey Ave Nw A",
+    "city": "Washington",
+    "postal_code": "20001",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 5510,
+   "b_row": 5595,
+   "v1_score": 0.742,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Alexandria Airport",
+    "address": "1804 Oliver Drive",
+    "city": "Alexandria",
+    "postal_code": "71303",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alexandria Public Schools - Isd 206",
+    "address": ".",
+    "city": "Alexandria",
+    "postal_code": "56308",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 2660,
+   "b_row": 2874,
+   "v1_score": 0.581,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Aig Insurance Thailand Public Co Ltd",
+    "address": "21f Siam Piwat Tower",
+    "city": "Bangkok",
+    "postal_code": "10330",
+    "country": "Th"
+   },
+   "B": {
+    "customer_name": "Aira Securities Public Co Ltd",
+    "address": "319 Chamchuri Square Building, 17th And 20th Floors, Phayathai Road, Pathumwan, Pathumwan,",
+    "city": "Bangkok",
+    "postal_code": "10330",
+    "country": "Th"
+   }
+  },
+  {
+   "a_row": 6456,
+   "b_row": 6716,
+   "v1_score": 0.946,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Alliancebernstein L.p.",
+    "address": "1345 Ave Of The Americas",
+    "city": "New York",
+    "postal_code": "10105",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Allianz Group",
+    "address": "1345 Ave Of The Americas",
+    "city": "New York",
+    "postal_code": "10105",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 3415,
+   "b_row": 3417,
+   "v1_score": 0.998,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Air Liquide Industrial Sid 160719",
+    "address": "11754 Road 120",
+    "city": "Pixley",
+    "postal_code": "93256",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Air Liquide Industrial Us",
+    "address": "11754 Road 120",
+    "city": "Pixley",
+    "postal_code": "93256",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 8213,
+   "b_row": 8214,
+   "v1_score": 0.927,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Alta Resources",
+    "address": "One Neenah Center",
+    "city": "Neenah",
+    "postal_code": "54956",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alta Resources Corp",
+    "address": "120 N Commercial St",
+    "city": "Neenah",
+    "postal_code": "54956",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 826,
+   "b_row": 5929,
+   "v1_score": 0.514,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Aemo Ltd",
+    "address": "Level 17, 197 St Georges Terrace",
+    "city": "Perth",
+    "postal_code": "6000",
+    "country": "Au"
+   },
+   "B": {
+    "customer_name": "Alinta Energy Pty Ltd - Wa",
+    "address": "Level 18 Raine Square",
+    "city": "Perth",
+    "postal_code": "6000",
+    "country": "Au"
+   }
+  },
+  {
+   "a_row": 1306,
+   "b_row": 1308,
+   "v1_score": 0.344,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Affiliated",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   },
+   "B": {
+    "customer_name": "Affiliated Banks Service Co",
+    "address": "445 E 124th Ave",
+    "city": "Thornton",
+    "postal_code": "80241",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 9431,
+   "b_row": 9534,
+   "v1_score": 0.331,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "America",
+    "address": "Usa - Usa",
+    "city": "Usa",
+    "postal_code": "38294",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Association For Cancer Research, Inc.",
+    "address": "615 Chestnut St Fl 17",
+    "city": "Philadelphia",
+    "postal_code": "19106",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 9890,
+   "b_row": 9946,
+   "v1_score": 0.684,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "American Funds Service Company",
+    "address": "6455 Irvine Center Dr",
+    "city": "Irvine",
+    "postal_code": "92618",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Home Mortgage Servicing Inc.",
+    "address": "6501 Irvine Center Dr",
+    "city": "Irvine",
+    "postal_code": "92618",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 8382,
+   "b_row": 8383,
+   "v1_score": 0.707,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Altisource Business Solutions Private Limited",
+    "address": "Pritech Park",
+    "city": "Bengaluru",
+    "postal_code": "560103",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Altisource Business Solutions Pvt Limited",
+    "address": "Block Number.12, 4th Floor A Wing",
+    "city": "Bangalore",
+    "postal_code": "560103",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 4611,
+   "b_row": 4661,
+   "v1_score": 0.632,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Alabama Gas Corp",
+    "address": "2101 6th Ave N Ste 100",
+    "city": "Birmingham",
+    "postal_code": "35203",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alagasco Pipeline Co Inc",
+    "address": "2101 6th Ave N",
+    "city": "Birmingham",
+    "postal_code": "35203",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 9864,
+   "b_row": 9865,
+   "v1_score": 0.749,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "American Financial Corporation",
+    "address": "580 Walnut St Fl 9",
+    "city": "Cincinnati",
+    "postal_code": "45202",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Financial Group",
+    "address": "49 E 4th St",
+    "city": "Cincinnati",
+    "postal_code": "45202",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 4684,
+   "b_row": 4687,
+   "v1_score": 0.998,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Alameda County",
+    "address": "2450 Stevenson Rd",
+    "city": "Fremont",
+    "postal_code": "94538",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alameda County Library Sid 34718",
+    "address": "2450 Stevenson Blvd",
+    "city": "Fremont",
+    "postal_code": "94538",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 8683,
+   "b_row": 9227,
+   "v1_score": 0.47,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Amagus LLC",
+    "address": "6386 Nw 97th Ave",
+    "city": "Doral",
+    "postal_code": "33178",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "A & M Connection, Inc.",
+    "address": "6344 Nw 99th Ave",
+    "city": "Doral",
+    "postal_code": "33178",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 7169,
+   "b_row": 7288,
+   "v1_score": 0.31,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Allstate",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   },
+   "B": {
+    "customer_name": "Allstate Heating And Cooling, Incorporated",
+    "address": "1026 Nandino Blvd",
+    "city": "Lexington",
+    "postal_code": "40511",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 5579,
+   "b_row": 5603,
+   "v1_score": 0.494,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Alexandria Dogs",
+    "address": "401 Courthouse Sq",
+    "city": "Alexandria",
+    "postal_code": "22314",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alexandria School Corporartion",
+    "address": null,
+    "city": "Alexandria",
+    "postal_code": "46001",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 8386,
+   "b_row": 8389,
+   "v1_score": 0.816,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Altitude Accounting Pty Ltd",
+    "address": "28 Vanessa Bvd",
+    "city": "Springwood",
+    "postal_code": "4127",
+    "country": "Au"
+   },
+   "B": {
+    "customer_name": "Altitude Financial Group",
+    "address": "28 Vanessa Bvd",
+    "city": "Springwood",
+    "postal_code": "4127",
+    "country": "Au"
+   }
+  },
+  {
+   "a_row": 6495,
+   "b_row": 6502,
+   "v1_score": 0.612,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Alliance Data Center",
+    "address": "5840 One Legacy Circle",
+    "city": "Plano",
+    "postal_code": "75024",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alliance Data Systems Inc",
+    "address": "7500 Dallas Pkwy Ste 700",
+    "city": "Plano",
+    "postal_code": "75024",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 6285,
+   "b_row": 6288,
+   "v1_score": 0.875,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Allegis Mcr Various",
+    "address": null,
+    "city": "Hanover",
+    "postal_code": "21076",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Allegis Various",
+    "address": "7320 Parkway Drive",
+    "city": "Hanover",
+    "postal_code": "21076",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 5373,
+   "b_row": 5375,
+   "v1_score": 0.961,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Aldine Independent School District",
+    "address": "1865 Aldine Bender Rd",
+    "city": "Houston",
+    "postal_code": "77032",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Aldine Isd",
+    "address": null,
+    "city": "Houston",
+    "postal_code": "77032",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 4988,
+   "b_row": 4990,
+   "v1_score": 0.71,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Alberta Health Services",
+    "address": "10030 107 St Nw Suite 9",
+    "city": "Edmonton",
+    "postal_code": "T5J 3E4",
+    "country": "Ca"
+   },
+   "B": {
+    "customer_name": "Alberta Health Services Royal Alex Hospital",
+    "address": "10240 Kingsway Avenue Nw",
+    "city": "Edmonton",
+    "postal_code": "T5H 3V9",
+    "country": "Ca"
+   }
+  },
+  {
+   "a_row": 721,
+   "b_row": 5869,
+   "v1_score": 0.217,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Aegis Bpo Services (gurgaon) Limited",
+    "address": "Plot No. 6, Sector 34",
+    "city": "Gurgaon",
+    "postal_code": "122001",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Alight Hr Services India Private Limited",
+    "address": "Ground To 7, 12 And 13 Floor Building No 2,",
+    "city": "Gurgaon",
+    "postal_code": "122001",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 7169,
+   "b_row": 7187,
+   "v1_score": 0.372,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Allstate",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   },
+   "B": {
+    "customer_name": "Allstate 0577",
+    "address": "6411 Ivy Lane",
+    "city": "Greenbelt",
+    "postal_code": "20770",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 4960,
+   "b_row": 4961,
+   "v1_score": 0.681,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Albemarle District Jail",
+    "address": null,
+    "city": "Elizabeth City",
+    "postal_code": "27909",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Albemarle Hospital",
+    "address": null,
+    "city": "Elizabeth City",
+    "postal_code": "27909",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 5378,
+   "b_row": 5379,
+   "v1_score": 0.848,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Aldine Isd",
+    "address": "9999 Veterans Memorial",
+    "city": "Houston",
+    "postal_code": "77038",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Aldine Isd 2016 Bond Package",
+    "address": null,
+    "city": "Houston",
+    "postal_code": "77073",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 8939,
+   "b_row": 8940,
+   "v1_score": 0.999,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Amazon Lab",
+    "address": "1120 Enterprise Way",
+    "city": "Sunnyvale",
+    "postal_code": "94089",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Amazon Lab 126",
+    "address": "1100 Enterprise Way",
+    "city": "Sunnyvale",
+    "postal_code": "94089",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 9810,
+   "b_row": 9818,
+   "v1_score": 0.482,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "American Express Foreign Exchange Private Limited",
+    "address": "G - 10 / 3",
+    "city": "New Delhi",
+    "postal_code": "110044",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "American Express Services India Private Limited",
+    "address": "Metropolitan - Saket, 7th Floor, Office Block",
+    "city": "New Delhi",
+    "postal_code": "110017",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 8109,
+   "b_row": 8111,
+   "v1_score": 0.546,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Alstom T & D India Limited",
+    "address": "Raw Material Stores - 381a",
+    "city": "Noida",
+    "postal_code": "201301",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Alstom T&d India Limited",
+    "address": "Ground Floor, A-7, Sector 65",
+    "city": "Noida",
+    "postal_code": "201301",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 3877,
+   "b_row": 8976,
+   "v1_score": 0.352,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Air Vanuatu",
+    "address": "Level 1, 160 Clarence St",
+    "city": "Sydney",
+    "postal_code": "2000",
+    "country": "Au"
+   },
+   "B": {
+    "customer_name": "Amazon Web Services Australia Pty Ltd",
+    "address": "2 Park St",
+    "city": "Sydney",
+    "postal_code": "2000",
+    "country": "Au"
+   }
+  },
+  {
+   "a_row": 7177,
+   "b_row": 7286,
+   "v1_score": 0.451,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Allstate 0035",
+    "address": "1776 American Heritage",
+    "city": "Jacksonville",
+    "postal_code": "32259",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Allstate Floridian Insurance Company",
+    "address": "1776 Amer Hrtg Life Dr",
+    "city": "Jacksonville",
+    "postal_code": "32224",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 9431,
+   "b_row": 9750,
+   "v1_score": 0.326,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "America",
+    "address": "Usa - Usa",
+    "city": "Usa",
+    "postal_code": "38294",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Efird Mills",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 2721,
+   "b_row": 2725,
+   "v1_score": 0.376,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Aiken County",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   },
+   "B": {
+    "customer_name": "Aiken County Sheriffs",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 8155,
+   "b_row": 8156,
+   "v1_score": 0.895,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Alta Bates Summit Medical Center",
+    "address": "450 30th St",
+    "city": "Oakland",
+    "postal_code": "94609",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alta Bates - Sutter Health",
+    "address": "350 30th St",
+    "city": "Oakland",
+    "postal_code": "94609",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 1496,
+   "b_row": 4009,
+   "v1_score": 0.632,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "A Flux Solutions Pte Ltd",
+    "address": "10 Anson Road #27-15 International Plaza",
+    "city": "Singapore",
+    "postal_code": "79903",
+    "country": "Sg"
+   },
+   "B": {
+    "customer_name": "A-it Software Services Pte Ltd",
+    "address": "10 Anson Road",
+    "city": "Singapore",
+    "postal_code": "79903",
+    "country": "Sg"
+   }
+  },
+  {
+   "a_row": 9864,
+   "b_row": 9869,
+   "v1_score": 0.772,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "American Financial Corporation",
+    "address": "580 Walnut St Fl 9",
+    "city": "Cincinnati",
+    "postal_code": "45202",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Financial Resources",
+    "address": "525 Vine St Fl 7",
+    "city": "Cincinnati",
+    "postal_code": "45202",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 881,
+   "b_row": 890,
+   "v1_score": 0.417,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Aep Power Marketing, Inc.",
+    "address": "1 Riverside Plz Fl 1",
+    "city": "Columbus",
+    "postal_code": "43215",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Aep T&d Services, LLC",
+    "address": "1 Riverside Plz",
+    "city": "Columbus",
+    "postal_code": "43215",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 5687,
+   "b_row": 5688,
+   "v1_score": 0.99,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Alfa Lula Alto Operacoes Maritimas Ltda",
+    "address": "Rua Jose Aguiar Franco 327",
+    "city": "Macae",
+    "postal_code": "27923",
+    "country": "Br"
+   },
+   "B": {
+    "customer_name": "Alfa Lula Alto Operacoes Maritimas Ltda [4020]",
+    "address": "R Jose Aguiar Franco 327",
+    "city": "Macae",
+    "postal_code": "27923-320",
+    "country": "Br"
+   }
+  },
+  {
+   "a_row": 9289,
+   "b_row": 9291,
+   "v1_score": 0.951,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Amdocs Development Center India Private Limited",
+    "address": "Tower 7, 7th Floor Cyber City Magarpatta",
+    "city": "Pune",
+    "postal_code": "411013",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Amdocs Development Centre Delhi Private Limited",
+    "address": "6th Floor, Tower 2, Cybercity, Magarpatta",
+    "city": "Pune",
+    "postal_code": "411013",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 1754,
+   "b_row": 4137,
+   "v1_score": 0.743,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Agc Singapore Services Pte Ltd",
+    "address": "460 Alexandra Road",
+    "city": "Singapore",
+    "postal_code": "119963",
+    "country": "Sg"
+   },
+   "B": {
+    "customer_name": "Ajinomoto (singapore) Private Limited",
+    "address": "460 Alexandra Road",
+    "city": "Singapore",
+    "postal_code": "119963",
+    "country": "Sg"
+   }
+  },
+  {
+   "a_row": 1992,
+   "b_row": 1993,
+   "v1_score": 0.776,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Agilent Technologies Microwave Prod (malaysia) Sdn Bhd",
+    "address": "Bayan Lepas Free Industrial Zone",
+    "city": "Pulau Pinang",
+    "postal_code": "11900",
+    "country": "My"
+   },
+   "B": {
+    "customer_name": "Agilent Technologies (m) Sdn Bhd",
+    "address": "Bayan Lepas Free Industrial Zone",
+    "city": "Bayan Lepas",
+    "postal_code": "11900",
+    "country": "My"
+   }
+  },
+  {
+   "a_row": 1871,
+   "b_row": 1875,
+   "v1_score": 0.65,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Agere System India Private Limited",
+    "address": "Unit 1, 7th Floor, Itpl,white Field,",
+    "city": "Bengaluru",
+    "postal_code": "560066",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Agere Systems India Private Limited",
+    "address": "7th Floor, East Wing Raheja Towers",
+    "city": "Bengaluru",
+    "postal_code": "560001",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 7630,
+   "b_row": 7639,
+   "v1_score": 0.307,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Alorica",
+    "address": "5031 Commerce Park Cir",
+    "city": "Pensacola",
+    "postal_code": "32505",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alorica Mexico Global Services Sa De Cv",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   }
+  },
+  {
+   "a_row": 2239,
+   "b_row": 2240,
+   "v1_score": 0.951,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Agritech Analytics Sid 78958",
+    "address": "5545 Avenida Delos Robles",
+    "city": "Visalia",
+    "postal_code": "93291",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Agritech Dairymans Coop Sid 78958",
+    "address": "55456 Avenida Delos Robles",
+    "city": "Visalia",
+    "postal_code": "93291",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 6524,
+   "b_row": 6525,
+   "v1_score": 0.892,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Alliance Fibres Limited",
+    "address": "2028-29, Jash Market & Yarn Market,",
+    "city": "Surat",
+    "postal_code": "395002",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Alliance Filaments Limited",
+    "address": "1001-1002, Jash Textile & Yarn Market",
+    "city": "Surat",
+    "postal_code": "395002",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 9202,
+   "b_row": 9883,
+   "v1_score": 0.856,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Amc Networks Inc.",
+    "address": "11 Penn Plz",
+    "city": "New York",
+    "postal_code": "10001",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Foundation For The Blind, Inc.",
+    "address": "11 Penn Plz Ste 300",
+    "city": "New York",
+    "postal_code": "10001",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 6585,
+   "b_row": 8596,
+   "v1_score": 0.744,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Alliance Mep Sdn Bhd",
+    "address": "No 75-2,block G, Zenith Corporate Park, Jalan Ss 7/26, Ss 7,",
+    "city": "Petaling Jaya,",
+    "postal_code": "47301",
+    "country": "My"
+   },
+   "B": {
+    "customer_name": "Alvision Sdn Bhd",
+    "address": "8a 8a",
+    "city": "Petaling Jaya",
+    "postal_code": "47301",
+    "country": "My"
+   }
+  },
+  {
+   "a_row": 9342,
+   "b_row": 9343,
+   "v1_score": 0.8,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Amec Foster Wheeler Usa Corp",
+    "address": "17325 Park Row",
+    "city": "Houston",
+    "postal_code": "770844932",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Amec Foster Wheeler Usa Corporation",
+    "address": "585 N Dairy Ashford Rd",
+    "city": "Houston",
+    "postal_code": "77079",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 4688,
+   "b_row": 4689,
+   "v1_score": 0.997,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Alameda County Sheriffs Sid 139862",
+    "address": "2000 150th Street",
+    "city": "San Leandro",
+    "postal_code": "94578",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alameda County Sheriffs Sid 139862",
+    "address": "2000 15th Ave",
+    "city": "San Leandro",
+    "postal_code": "94578",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 1543,
+   "b_row": 1544,
+   "v1_score": 0.999,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Af Pki Spo",
+    "address": "4241 E Piedras Dr Ste 210",
+    "city": "San Antonio",
+    "postal_code": "78228",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Af Pki Spo.",
+    "address": "4241 E Piedras Dr",
+    "city": "San Antonio",
+    "postal_code": "78228",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 5375,
+   "b_row": 5378,
+   "v1_score": 0.897,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Aldine Isd",
+    "address": null,
+    "city": "Houston",
+    "postal_code": "77032",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Aldine Isd",
+    "address": "9999 Veterans Memorial",
+    "city": "Houston",
+    "postal_code": "77038",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 7169,
+   "b_row": 7180,
+   "v1_score": 0.372,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Allstate",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   },
+   "B": {
+    "customer_name": "Allstate 0102",
+    "address": "200 North Lasalle",
+    "city": "Chicago",
+    "postal_code": "60601",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 5611,
+   "b_row": 5614,
+   "v1_score": 0.734,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Alexian Brothers Health System",
+    "address": "3040 Salt Creek Ln",
+    "city": "Elk Grove Village",
+    "postal_code": "60007",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alexian Brothers Medical",
+    "address": "800 W Biesterfield Road Center",
+    "city": "Elk Grove Village",
+    "postal_code": "60007",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 3411,
+   "b_row": 3416,
+   "v1_score": 0.999,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Air Liquide Industrial Sid 160719",
+    "address": "11754 Road 120",
+    "city": "Pixley",
+    "postal_code": "93256",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Air Liquide Industrial Sid 160719",
+    "address": "1754 Road 120",
+    "city": "Pixley",
+    "postal_code": "93256",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 843,
+   "b_row": 9735,
+   "v1_score": 0.752,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Aeo Management Co.",
+    "address": "77 Hot Metal St",
+    "city": "Pittsburgh",
+    "postal_code": "15203",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Eagle Outfitters, Inc.",
+    "address": "77 Hot Metal St",
+    "city": "Pittsburgh",
+    "postal_code": "15203",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 3191,
+   "b_row": 3914,
+   "v1_score": 0.489,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Air India Limited",
+    "address": "9th Floor",
+    "city": "Mumbai",
+    "postal_code": "400029",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Airwork India Engineering",
+    "address": "Gate 8, Old Airport Road",
+    "city": "Mumbai",
+    "postal_code": "400029",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 7265,
+   "b_row": 7293,
+   "v1_score": 0.813,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "All-state Belting, LLC",
+    "address": "520 S 18th St",
+    "city": "West Des Moines",
+    "postal_code": "50265",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "All-state Industries, Inc.",
+    "address": "500 S 18th St",
+    "city": "West Des Moines",
+    "postal_code": "50265",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 8443,
+   "b_row": 8444,
+   "v1_score": 0.858,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Alto Shaam",
+    "address": null,
+    "city": "Menominee Falls",
+    "postal_code": "53052",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alto Shaam",
+    "address": "W164n9221 Water St",
+    "city": "Menomonee Falls",
+    "postal_code": "53051",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 4502,
+   "b_row": 4515,
+   "v1_score": 0.441,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Ak Steel",
+    "address": "6500 North Hwy 231 Ccm Office - Cold Mill",
+    "city": "Rockport",
+    "postal_code": "47635",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Ak Steel Research Facilty",
+    "address": "6180 Access Rd",
+    "city": null,
+    "postal_code": "45005",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 711,
+   "b_row": 714,
+   "v1_score": 0.205,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Aegis",
+    "address": "1 C 16 Shah Complex",
+    "city": "Navi Mumbai",
+    "postal_code": "400705",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Aegis",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": "Ar"
+   }
+  },
+  {
+   "a_row": 5222,
+   "b_row": 5229,
+   "v1_score": 0.465,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Alchemy Capital Management Private Limited",
+    "address": "240 D N Road Right Wing",
+    "city": "Mumbai",
+    "postal_code": "400001",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Alchemy Share & Stock Brokers Private Limited",
+    "address": "4th Floor, 240 Navsari Building, Right Wing",
+    "city": "Mumbai",
+    "postal_code": "400001",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 2140,
+   "b_row": 2141,
+   "v1_score": 0.999,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Agra Bareksa",
+    "address": "66 C Jl. Aipda Ks Tubun",
+    "city": "Jakarta",
+    "postal_code": "11410",
+    "country": "Id"
+   },
+   "B": {
+    "customer_name": "Agra Bareksa",
+    "address": "66 C Jl. Aipda Ks Tubun",
+    "city": "Jakarta",
+    "postal_code": "11410",
+    "country": "Id"
+   }
+  },
+  {
+   "a_row": 6733,
+   "b_row": 8718,
+   "v1_score": 0.626,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Allied",
+    "address": "151 Front Street",
+    "city": "Toronto",
+    "postal_code": "M5J 2N1",
+    "country": "Ca"
+   },
+   "B": {
+    "customer_name": "Amanah Tech Inc",
+    "address": "151 Front St W Suite 706",
+    "city": "Toronto",
+    "postal_code": "M5J 2N1",
+    "country": "Ca"
+   }
+  },
+  {
+   "a_row": 6734,
+   "b_row": 6735,
+   "v1_score": 0.999,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Allied 100",
+    "address": "222 W Washington Ave",
+    "city": "Madison",
+    "postal_code": "53703",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Allied 100",
+    "address": "222 W Washington Ave",
+    "city": "Madison",
+    "postal_code": "53703",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 2843,
+   "b_row": 9992,
+   "v1_score": 0.497,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Aip Publishing LLC",
+    "address": "1305 Walt Whitman Rd # 300",
+    "city": "Melville",
+    "postal_code": "11747",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Institute Of Physics Incorporated",
+    "address": "1305 Walt Whitman Rd 1n01",
+    "city": "Melville",
+    "postal_code": "11747",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 6336,
+   "b_row": 6337,
+   "v1_score": 0.873,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Allendale County",
+    "address": "166 Law Enforcement Rd",
+    "city": "Fairfax",
+    "postal_code": "29827",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Allendale County Hospital Board",
+    "address": "1787 Allndale Fairfax Hwy",
+    "city": "Fairfax",
+    "postal_code": "29827",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 8770,
+   "b_row": 8771,
+   "v1_score": 0.997,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Amara Raja Electronics Limited",
+    "address": "Diguvamagham Village & Post, Thavanampalli Mandalam",
+    "city": "Chittoor",
+    "postal_code": "517129",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Amara Raja Electronics Limited",
+    "address": "Diguvamagam(village&post)",
+    "city": "Chittoor",
+    "postal_code": "517129",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 785,
+   "b_row": 786,
+   "v1_score": 0.575,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Aegon Usa Investment Management, LLC",
+    "address": "4333 Edgewood Rd Ne",
+    "city": "Cedar Rapids",
+    "postal_code": "52499",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Aegon U.s. Holding Corporation",
+    "address": "4333 Edgewood Rd Ne",
+    "city": "Cedar Rapids",
+    "postal_code": "52499",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 3242,
+   "b_row": 3262,
+   "v1_score": 0.83,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Air Force",
+    "address": "2610 Pink Flamingo Ave",
+    "city": "Tampa",
+    "postal_code": "33621",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Air Force Joint Communications Support Element",
+    "address": null,
+    "city": "Tampa",
+    "postal_code": "33612",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 6439,
+   "b_row": 6526,
+   "v1_score": 0.728,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Alliance Bank Malaysia Bhd",
+    "address": "Ground Floor Menara Multi-purpose",
+    "city": "Kuala Lumpur",
+    "postal_code": "50100",
+    "country": "My"
+   },
+   "B": {
+    "customer_name": "Alliance Financial Group Bhd",
+    "address": "3rd Floor Menara Multi Purpose",
+    "city": "Kuala Lumpur",
+    "postal_code": "50100",
+    "country": "My"
+   }
+  },
+  {
+   "a_row": 4084,
+   "b_row": 7133,
+   "v1_score": 0.579,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Ajc Trading, Inc.",
+    "address": "256 W 38th St",
+    "city": "New York",
+    "postal_code": "10018",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Allsector Technology Group, Inc.",
+    "address": "205 W 39th St Fl 16",
+    "city": "New York",
+    "postal_code": "10018",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 9788,
+   "b_row": 9968,
+   "v1_score": 0.982,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "American E Pay",
+    "address": "8420 W Bryn Mawr Ave",
+    "city": "Chicago",
+    "postal_code": "60631",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Imaging Management, Inc.",
+    "address": "8600 W Bryn Mawr Ave 800s",
+    "city": "Chicago",
+    "postal_code": "60631",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 4368,
+   "b_row": 4370,
+   "v1_score": 0.998,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Akima, LLC",
+    "address": "13873 Park Center Rd Ste 400",
+    "city": "Herndon",
+    "postal_code": "20171",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Akima, LLC",
+    "address": "13873 Park Center Rd 400n",
+    "city": "Herndon",
+    "postal_code": "20171",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 7706,
+   "b_row": 7707,
+   "v1_score": 0.857,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Alphacool Refrigeration And Air Conditioning",
+    "address": "1 Redden Street",
+    "city": "Portsmith",
+    "postal_code": "4870",
+    "country": "Au"
+   },
+   "B": {
+    "customer_name": "Alphacool Townsville Pty Ltd",
+    "address": "1 Redden Street",
+    "city": "Portsmith",
+    "postal_code": "4870",
+    "country": "Au"
+   }
+  },
+  {
+   "a_row": 5197,
+   "b_row": 9202,
+   "v1_score": 0.97,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Alcatel Networks Inc",
+    "address": "11 Penn Plz Ste 1620",
+    "city": "New York",
+    "postal_code": "10001",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Amc Networks Inc.",
+    "address": "11 Penn Plz",
+    "city": "New York",
+    "postal_code": "10001",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 1215,
+   "b_row": 1216,
+   "v1_score": 0.879,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Aetna Rx Home Delivery, LLC",
+    "address": "10991 Nw Airworld Dr",
+    "city": "Kansas City",
+    "postal_code": "64153",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Aetna Site 51925",
+    "address": "10991 Nw Airworld Drive",
+    "city": "Kansas City",
+    "postal_code": "64153",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 5374,
+   "b_row": 5380,
+   "v1_score": 0.831,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Aldine Independent School District",
+    "address": "2520 Ww Thorne Blvd",
+    "city": "Houston",
+    "postal_code": "77073",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Aldine Isd-elem Sch Region 1",
+    "address": "2520 Ww Thorne Blvd",
+    "city": "Houston",
+    "postal_code": "77073",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 9431,
+   "b_row": 9718,
+   "v1_score": 0.355,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "America",
+    "address": "Usa - Usa",
+    "city": "Usa",
+    "postal_code": "38294",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Distilling",
+    "address": null,
+    "city": "East Hampton",
+    "postal_code": "6424",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 5404,
+   "b_row": 5405,
+   "v1_score": 0.969,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Ald Thermal Treatment Inc",
+    "address": null,
+    "city": "Port Huron",
+    "postal_code": "48060",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Ald Thermal Treatment, Inc.",
+    "address": "2656 24th St",
+    "city": "Port Huron",
+    "postal_code": "48060",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 8845,
+   "b_row": 8847,
+   "v1_score": 0.689,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Amaze Infraventures Pvt Limited",
+    "address": "Mezzanine Floor-1/d, Naurang House, 21",
+    "city": "New Delhi",
+    "postal_code": "110001",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Amaze Television Private Limited",
+    "address": "Mezzanine Floor- 1/d Naurang House",
+    "city": "New Delhi",
+    "postal_code": "110001",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 2587,
+   "b_row": 2588,
+   "v1_score": 0.983,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Aid Electric Corporation",
+    "address": "8600 109th Ave N",
+    "city": null,
+    "postal_code": "55316",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Aid Electric Corporation",
+    "address": "8600 109th Ave. N.",
+    "city": "Champlin",
+    "postal_code": "55316",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 3708,
+   "b_row": 3743,
+   "v1_score": 0.206,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Airtech",
+    "address": "Nit",
+    "city": "Faridabad",
+    "postal_code": "121001",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Airtech West",
+    "address": "2505 Brentwood Pl Se",
+    "city": "Lacey",
+    "postal_code": "98503",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 8896,
+   "b_row": 8906,
+   "v1_score": 0.743,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Amazon Commercial Services Pty Ltd",
+    "address": "2 Park St.",
+    "city": "Sydney",
+    "postal_code": "2000",
+    "country": "Au"
+   },
+   "B": {
+    "customer_name": "Amazon Corporate Services Pty Ltd",
+    "address": "Level 12 55 Hunter St",
+    "city": "Sydney",
+    "postal_code": "2000",
+    "country": "Au"
+   }
+  },
+  {
+   "a_row": 1806,
+   "b_row": 3380,
+   "v1_score": 0.235,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Air Liquid Process & Co.",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   },
+   "B": {
+    "customer_name": "Air Liquide",
+    "address": "946 Spindletop Ave.",
+    "city": "Beaumont",
+    "postal_code": "77705",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 6418,
+   "b_row": 6419,
+   "v1_score": 0.997,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Allgo Embedded System Private Limited",
+    "address": "6 Pss Plaza Nal Wind Tunnel Road",
+    "city": "Bengaluru",
+    "postal_code": "560017",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Allgo Embedded Systems Private Limited",
+    "address": "Pss Plaza, 6, Nal Wind Tunnel Road",
+    "city": "Bengaluru",
+    "postal_code": "560017",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 6107,
+   "b_row": 6110,
+   "v1_score": 0.399,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "All Bidders",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   },
+   "B": {
+    "customer_name": "All Bidders Np",
+    "address": "3 Fernwood Ave",
+    "city": "Edison",
+    "postal_code": "8837",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 963,
+   "b_row": 972,
+   "v1_score": 0.986,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Aerojet",
+    "address": "Highway 50 And Aerojet",
+    "city": "Rancho Cordova",
+    "postal_code": "95742",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Aerojet Sid 140788",
+    "address": "Highway 50 & Hazel Ave",
+    "city": "Rancho Cordova",
+    "postal_code": "95742",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 8489,
+   "b_row": 8490,
+   "v1_score": 0.296,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Altura Communications",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Altura Communication Solutions LLC",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 9520,
+   "b_row": 9523,
+   "v1_score": 0.794,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "American Ambulance",
+    "address": "2911 East Tulare St",
+    "city": "Fresno",
+    "postal_code": "93721",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Ambulance Sid 54488",
+    "address": "4555 East Hamilton",
+    "city": "Fresno",
+    "postal_code": "93702",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 6439,
+   "b_row": 6653,
+   "v1_score": 0.645,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Alliance Bank Malaysia Bhd",
+    "address": "Ground Floor Menara Multi-purpose",
+    "city": "Kuala Lumpur",
+    "postal_code": "50100",
+    "country": "My"
+   },
+   "B": {
+    "customer_name": "Alliance Unit Trust Management Bhd",
+    "address": "23-01, 23rd Floor, Menara Multi-purpose",
+    "city": "Kuala Lumpur",
+    "postal_code": "50100",
+    "country": "My"
+   }
+  },
+  {
+   "a_row": 1540,
+   "b_row": 1541,
+   "v1_score": 0.379,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Afp Habitat",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Afp Habitat S.a.",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 9096,
+   "b_row": 9556,
+   "v1_score": 0.348,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "American Axle",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   },
+   "B": {
+    "customer_name": "American Axle & Manufacturing, Inc.",
+    "address": "1 Dauch Dr",
+    "city": "Detroit",
+    "postal_code": "48211",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 6276,
+   "b_row": 6286,
+   "v1_score": 0.47,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Allegis Global Solutions, Inc.",
+    "address": "7312 Parkway Dr",
+    "city": "Hanover",
+    "postal_code": "21076",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Allegis Mph2s Jay",
+    "address": null,
+    "city": "Hanover",
+    "postal_code": "21076",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 6080,
+   "b_row": 6082,
+   "v1_score": 0.996,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Allan Ics",
+    "address": "2021 Beulah Ave",
+    "city": "East Troy",
+    "postal_code": "53120",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Allan Integrated Control",
+    "address": "2021 Beulah Ave",
+    "city": "East Troy",
+    "postal_code": "53120",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 3562,
+   "b_row": 3563,
+   "v1_score": 0.852,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Airport Square #11",
+    "address": "911 Elridge Landing Road",
+    "city": "Linthicum",
+    "postal_code": "21090",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Airport Square Xix, LLC",
+    "address": "1099 Winterson Rd",
+    "city": "Linthicum",
+    "postal_code": "21090",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 1130,
+   "b_row": 1193,
+   "v1_score": 0.447,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Aetna",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   },
+   "B": {
+    "customer_name": "Aetna",
+    "address": "535 Connecticut Avenue",
+    "city": "Norwalk",
+    "postal_code": "6854",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 2548,
+   "b_row": 2549,
+   "v1_score": 0.5,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Aia Singapore Private Limited",
+    "address": "3 Tampines Grande #07-00",
+    "city": "Singapore",
+    "postal_code": "528799",
+    "country": "Sg"
+   },
+   "B": {
+    "customer_name": "Aia Singapore Pte Ltd",
+    "address": "1 Robinson Road",
+    "city": "Singapore",
+    "postal_code": "48542",
+    "country": "Sg"
+   }
+  },
+  {
+   "a_row": 7170,
+   "b_row": 7209,
+   "v1_score": 0.372,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Allstate",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   },
+   "B": {
+    "customer_name": "Allstate 2519",
+    "address": "7632 Sw Durham Suite 200",
+    "city": "Tigard",
+    "postal_code": "97224",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 2600,
+   "b_row": 2661,
+   "v1_score": 0.99,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Aig Jeffersonville",
+    "address": "650 Missouri Ave",
+    "city": "Jeffersonville",
+    "postal_code": "47130",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Aig Jeffersonville",
+    "address": "650 Missouri Ave.",
+    "city": null,
+    "postal_code": "47130",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 7973,
+   "b_row": 7974,
+   "v1_score": 0.935,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Alps Fund Services, Inc.",
+    "address": "1290 N Broadway Ste 1100",
+    "city": "Denver",
+    "postal_code": "80203",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alps Holdings, Inc.",
+    "address": "1290 N Broadway Ste 1100",
+    "city": "Denver",
+    "postal_code": "80203",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 9753,
+   "b_row": 9764,
+   "v1_score": 0.393,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "American Electric",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Electric Power",
+    "address": "110 E Wayne St",
+    "city": "Fort Wayne",
+    "postal_code": "46802",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 9488,
+   "b_row": 9509,
+   "v1_score": 0.977,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "American Airlines",
+    "address": "4501 Hwy 360",
+    "city": "Fort Worth",
+    "postal_code": "76155",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Airlines New Trinty Complex Fort Worth",
+    "address": null,
+    "city": "Fort Worth",
+    "postal_code": "76155",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 8153,
+   "b_row": 8157,
+   "v1_score": 0.836,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Alta Bates Ii Sutter Health",
+    "address": "3039 Webster Street",
+    "city": "Oakland",
+    "postal_code": "94609",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alta Bates - Sutter Health",
+    "address": "350 Hawthorne Ave",
+    "city": "Oakland",
+    "postal_code": "94609",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 4262,
+   "b_row": 4263,
+   "v1_score": 0.856,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Akarsh Infotech And Infrastructure",
+    "address": "No 176,",
+    "city": "Bangalore Urban",
+    "postal_code": "560066",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Akarsh Infotech & Infrastructure",
+    "address": "No B17, Ii Palace Cross Roadchakravarthy Layout",
+    "city": "Bengaluru",
+    "postal_code": null,
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 3779,
+   "b_row": 3780,
+   "v1_score": 0.874,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Airtel Madagascar",
+    "address": "Explorer Business Park",
+    "city": "Antananarivo",
+    "postal_code": null,
+    "country": "Za"
+   },
+   "B": {
+    "customer_name": "Airtel Madagascar S.a",
+    "address": "Airtel Building Explorer Business Park",
+    "city": "Antananarivo",
+    "postal_code": "101",
+    "country": "Ma"
+   }
+  },
+  {
+   "a_row": 970,
+   "b_row": 973,
+   "v1_score": 0.843,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Aerojet Rocketdyn Inc",
+    "address": "2001 Aerojet Rd",
+    "city": "Rancho Cordova",
+    "postal_code": "95742",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Aerojet Sid 171331",
+    "address": "2001 Aerojet Rd",
+    "city": "Rancho Cordova",
+    "postal_code": "95742",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 408,
+   "b_row": 411,
+   "v1_score": 0.306,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Adventist",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   },
+   "B": {
+    "customer_name": "Adventist Development And Relief Agency (adra) Cambodia",
+    "address": "Adventist Development And Relief Agency",
+    "city": "Phnom Penh",
+    "postal_code": null,
+    "country": "Kh"
+   }
+  },
+  {
+   "a_row": 414,
+   "b_row": 422,
+   "v1_score": 0.998,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Adventist Health",
+    "address": "1104 Creekside Ridge Dr",
+    "city": "Roseville",
+    "postal_code": "95678",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Adventist Health Sid 85065",
+    "address": "1101 Creekside Ridge Rd",
+    "city": "Roseville",
+    "postal_code": "95678",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 526,
+   "b_row": 530,
+   "v1_score": 0.507,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Advocate Good Samaritan Hospital",
+    "address": "3815 Highland Ave",
+    "city": "Downers Grove",
+    "postal_code": "60515",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Advocate Health Care Network",
+    "address": "3075 Highland Pkwy Fl 6",
+    "city": "Downers Grove",
+    "postal_code": "60515",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 1279,
+   "b_row": 1280,
+   "v1_score": 0.799,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "A F C Tool Co., Inc.",
+    "address": "4900 Webster St",
+    "city": "Dayton",
+    "postal_code": "45414",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Afc Tool Company Inc",
+    "address": "4900 Webster Street",
+    "city": "Dayton",
+    "postal_code": "45414",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 7173,
+   "b_row": 7298,
+   "v1_score": 0.666,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Allstate 0009",
+    "address": "8901 Esters Drive",
+    "city": "Irving",
+    "postal_code": "75063",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Allstate Insurance Co",
+    "address": "8675 Freeport Pkwy Bldg E",
+    "city": "Irving",
+    "postal_code": "75063",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 1953,
+   "b_row": 1999,
+   "v1_score": 0.994,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Agile 1",
+    "address": "6373 San Ignacio Ave",
+    "city": "San Jose",
+    "postal_code": "95119",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Agile Software - 88568",
+    "address": "6373 San Ignacio Blvd.",
+    "city": "San Jose",
+    "postal_code": "95119",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 8923,
+   "b_row": 8934,
+   "v1_score": 0.836,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Amazon Digital Services LLC",
+    "address": "410 Terry Ave N",
+    "city": "Seattle",
+    "postal_code": "98109",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Amazon International Holdings LLC",
+    "address": "410 Terry Ave N",
+    "city": "Seattle",
+    "postal_code": "98109",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 1747,
+   "b_row": 1749,
+   "v1_score": 0.518,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "A.g. Coombs Group Pty Ltd - Vic",
+    "address": "Po Box 1136",
+    "city": "Moorabbin",
+    "postal_code": "3189",
+    "country": "Au"
+   },
+   "B": {
+    "customer_name": "A.g. Coombs Projects Pty Ltd",
+    "address": "26 Cochranes Rd",
+    "city": "Moorabbin",
+    "postal_code": "3189",
+    "country": "Au"
+   }
+  },
+  {
+   "a_row": 3372,
+   "b_row": 3425,
+   "v1_score": 0.337,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Airliquide",
+    "address": null,
+    "city": "Reading",
+    "postal_code": "19605",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Airliquide Mexico S De Rl De Cv",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   }
+  },
+  {
+   "a_row": 3708,
+   "b_row": 3719,
+   "v1_score": 0.722,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Airtech",
+    "address": "Nit",
+    "city": "Faridabad",
+    "postal_code": "121001",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Airtech Engineers",
+    "address": "102 Deepam Residency, 26 Vishwash Colony",
+    "city": "Vadodara",
+    "postal_code": "390007",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 8920,
+   "b_row": 8921,
+   "v1_score": 0.756,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Amazon Development Centre (india) Private Limited",
+    "address": "No. 26/1, 8th Floor Brigade World Trade Center",
+    "city": "Bengaluru",
+    "postal_code": "560055",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Amazon Development Centre (india) Pvt Limited",
+    "address": "5th Floor Safina Towers",
+    "city": "Bengaluru",
+    "postal_code": "560052",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 9535,
+   "b_row": 9920,
+   "v1_score": 0.484,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "American Association For The Advancement Of Science",
+    "address": "1200 New York Ave Nw",
+    "city": "Washington",
+    "postal_code": "20005",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "American Health Care Association",
+    "address": "1201 L St Nw",
+    "city": "Washington",
+    "postal_code": "20005",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 8994,
+   "b_row": 8995,
+   "v1_score": 0.849,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Amba Enterprises",
+    "address": "Gate No.52,debul Alandi Road,chakhali",
+    "city": "Pune",
+    "postal_code": "412114",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Amba Enterprises",
+    "address": "S No.168, Barge Wasti",
+    "city": "Pune",
+    "postal_code": "410501",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 9797,
+   "b_row": 9798,
+   "v1_score": 0.361,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "American Express",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   },
+   "B": {
+    "customer_name": "American Express Australia Ltd - Amex",
+    "address": "L1 12-20 Shelley St",
+    "city": "Sydney",
+    "postal_code": "2000",
+    "country": "Au"
+   }
+  },
+  {
+   "a_row": 4022,
+   "b_row": 4023,
+   "v1_score": 0.955,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Aizant Drug Research Solutions",
+    "address": "28,",
+    "city": "Hyderabad",
+    "postal_code": "500055",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Aizant Drug Research Solutions Private Limited",
+    "address": "Survey No 172/173,",
+    "city": "Hyderabad",
+    "postal_code": "500014",
+    "country": "In"
+   }
+  },
+  {
+   "a_row": 4922,
+   "b_row": 4923,
+   "v1_score": 0.981,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Albany Medical Center",
+    "address": "43 New Scotland Ave",
+    "city": "Albany",
+    "postal_code": "12208",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Albany Medical Center P Building",
+    "address": null,
+    "city": "Albany",
+    "postal_code": "12208",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 5548,
+   "b_row": 5551,
+   "v1_score": 0.999,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Alexander Open Systems",
+    "address": "12980 Foster St Ste 300",
+    "city": "Overland Park",
+    "postal_code": "66213",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alexander Open Systems, Inc.",
+    "address": "12980 Foster St Ste 300",
+    "city": "Overland Park",
+    "postal_code": "66213",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 6379,
+   "b_row": 6380,
+   "v1_score": 0.616,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Allentown Architectural Offices Inc",
+    "address": "1132 Hamilton St # 303",
+    "city": "Allentown",
+    "postal_code": "18101",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Allentown Arena Condominium Unit Owners Association, Inc.",
+    "address": "435 Hamilton St Fl 3",
+    "city": "Allentown",
+    "postal_code": "18101",
+    "country": "Us"
+   }
+  },
+  {
+   "a_row": 7170,
+   "b_row": 7171,
+   "v1_score": 0.447,
+   "label": "UNSURE",
+   "A": {
+    "customer_name": "Allstate",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   },
+   "B": {
+    "customer_name": "Allstate",
+    "address": null,
+    "city": null,
+    "postal_code": null,
+    "country": null
+   }
+  },
+  {
+   "a_row": 3792,
+   "b_row": 3793,
+   "v1_score": 0.581,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Airtel Tchad",
+    "address": "Avenue Charles De Degaule",
+    "city": null,
+    "postal_code": null,
+    "country": "Za"
+   },
+   "B": {
+    "customer_name": "Airtel Tchad S.a.",
+    "address": "Avenue Charles De Gaulle",
+    "city": "Ndjamena",
+    "postal_code": "BP 5665",
+    "country": "Cd"
+   }
+  },
+  {
+   "a_row": 6426,
+   "b_row": 6514,
+   "v1_score": 0.465,
+   "label": "DISTINCT",
+   "A": {
+    "customer_name": "Alliance",
+    "address": "40 Main Road",
+    "city": "Hammonton",
+    "postal_code": "8037",
+    "country": "Us"
+   },
+   "B": {
+    "customer_name": "Alliance Energy Co., Ltd",
+    "address": "Suite 606 Indochina Park Tower, Block B, 04 Nguyen Dinh Chieu. Str, Ward Dakao, District 1, Ho Chi Minh City",
+    "city": null,
+    "postal_code": null,
+    "country": "Vn"
+   }
+  },
+  {
+   "a_row": 8917,
+   "b_row": 8919,
+   "v1_score": 0.913,
+   "label": "MATCH",
+   "A": {
+    "customer_name": "Amazon Development Centre (i)",
+    "address": "9th & 10th Floor",
+    "city": "Hyderabad",
+    "postal_code": "500081",
+    "country": "In"
+   },
+   "B": {
+    "customer_name": "Amazon Development Centre (india) Private Limited",
+    "address": "Bldg 9 Raheja Mindspace",
+    "city": "Hyderabad",
+    "postal_code": "500081",
+    "country": "In"
+   }
+  }
+ ]
+}

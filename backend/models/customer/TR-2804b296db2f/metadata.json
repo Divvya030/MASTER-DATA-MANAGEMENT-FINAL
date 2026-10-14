@@ -1,0 +1,107 @@
+{
+  "model_format_version": 1,
+  "training_run_id": "TR-2804b296db2f",
+  "domain": "customer",
+  "source_dataset_id": "DS-2026-0028",
+  "er_config_version": "6f1c3d73e79b1dd3",
+  "match_fields": [
+    "customer_name",
+    "city"
+  ],
+  "split_config": {
+    "seed": 42,
+    "clones_per_entity": 2,
+    "max_entities": 400,
+    "synthetic_mode": "AUTO",
+    "synthetic_used": true,
+    "real_split_method": "connected components over all labelled pairs (MATCH and DISTINCT); each component assigned wholesale to train/validation/test by hash -- no record in two splits",
+    "synthetic_split_method": "entity-level: each base record + its synthetic clones form one entity, assigned wholesale to one split",
+    "dedupe_sample_size": 1500,
+    "train_pairs_dropped_for_missing_data": {
+      "match": 86,
+      "distinct": 0
+    },
+    "train_pairs_dropped_unindexable": 0
+  },
+  "pair_counts": {
+    "train": {
+      "match": 327,
+      "distinct": 109
+    },
+    "validation": {
+      "match": 57,
+      "distinct": 19
+    },
+    "test": {
+      "match": 72,
+      "distinct": 24
+    }
+  },
+  "evaluation_metrics": {
+    "validation_pair_count": 76,
+    "validation_match_count": 57,
+    "validation_distinct_count": 19,
+    "threshold": 0.5,
+    "true_positives": 57,
+    "false_positives": 8,
+    "false_negatives": 0,
+    "true_negatives": 11,
+    "precision": 0.8769,
+    "recall": 1.0,
+    "f1": 0.9344,
+    "kind": "SYNTHETIC_VALIDATION",
+    "note": "Synthetic validation: measures the training pipeline on controlled corruptions of real records. It is NOT a measurement of real-world accuracy."
+  },
+  "created_at": "2026-10-13T23:57:17.636263+00:00",
+  "dependency_versions": {
+    "python": "3.12.3",
+    "dedupe": "3.0.3",
+    "BTrees": "6.4",
+    "numpy": "2.4.4",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "persistent": "6.8"
+  },
+  "label_counts": {
+    "real_steward": {
+      "match": 0,
+      "distinct": 0,
+      "train": {
+        "match": 0,
+        "distinct": 0
+      },
+      "validation": {
+        "match": 0,
+        "distinct": 0
+      },
+      "test": {
+        "match": 0,
+        "distinct": 0
+      }
+    },
+    "synthetic": {
+      "used": true,
+      "mode": "AUTO",
+      "train": {
+        "match": 241,
+        "distinct": 109
+      },
+      "note": "SYNTHETIC pairs are controlled augmentation, not real-world ground truth."
+    }
+  },
+  "threshold": 0.5,
+  "review_threshold": 0.35,
+  "threshold_calibration": "PROVISIONAL",
+  "real_evaluation": null,
+  "identifier_fields": [],
+  "blocking_fields": [],
+  "source_mapping": {
+    "customer_name": "customer_name",
+    "city": "city"
+  },
+  "training_field_stats": {
+    "customer_name": 0.0,
+    "city": 0.0
+  },
+  "standardization": "existing STANDARDIZED layer (not re-standardized for training)"
+}

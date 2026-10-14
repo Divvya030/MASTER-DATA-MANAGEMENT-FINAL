@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Meridian: Backend (uvicorn :8420)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["app.main:app", "--port", "8420", "--reload"],
+      "cwd": "${workspaceFolder}/backend",
+      "python": "${workspaceFolder}/backend/.venv/Scripts/python.exe",
+      "jinja": false,
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Meridian: Frontend (vite :5173)",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "--open"],
+      "cwd": "${workspaceFolder}/frontend",
+      "console": "integratedTerminal",
+      "serverReadyAction": {
+        "pattern": "Local:.*(https?://\\S+)",
+        "uriFormat": "%s",
+        "action": "openExternally"
+      }
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Meridian: Full stack",
+      "configurations": [
+        "Meridian: Backend (uvicorn :8420)",
+        "Meridian: Frontend (vite :5173)"
+      ],
+      "stopAll": true
+    }
+  ]
+}

@@ -1,0 +1,1625 @@
+{
+  "headline": {
+    "synthetic": {
+      "validation": {
+        "true_positives": 891,
+        "false_positives": 24,
+        "false_negatives": 9,
+        "precision": 0.9738,
+        "recall": 0.99,
+        "f1": 0.9818,
+        "precision_ci95": [
+          0.9613,
+          0.9823
+        ],
+        "recall_ci95": [
+          0.9811,
+          0.9947
+        ],
+        "blocking_recall": 0.99
+      },
+      "test": {
+        "true_positives": 888,
+        "false_positives": 34,
+        "false_negatives": 12,
+        "precision": 0.9631,
+        "recall": 0.9867,
+        "f1": 0.9748,
+        "precision_ci95": [
+          0.9489,
+          0.9735
+        ],
+        "recall_ci95": [
+          0.9768,
+          0.9924
+        ],
+        "blocking_recall": 0.9878
+      }
+    },
+    "weak_real": {
+      "validation": {
+        "true_positives": 10,
+        "false_positives": 4,
+        "false_negatives": 4,
+        "precision": 0.7143,
+        "recall": 0.7143,
+        "f1": 0.7143,
+        "true_negatives": 386,
+        "recall_ci95": [
+          0.4535,
+          0.8828
+        ],
+        "positives": 14,
+        "negatives": 390
+      },
+      "test": {
+        "true_positives": 13,
+        "false_positives": 7,
+        "false_negatives": 9,
+        "precision": 0.65,
+        "recall": 0.5909,
+        "f1": 0.619,
+        "true_negatives": 346,
+        "recall_ci95": [
+          0.3873,
+          0.7674
+        ],
+        "positives": 22,
+        "negatives": 353
+      }
+    },
+    "policy_negatives": {
+      "validation": {
+        "pairs": 120,
+        "false_merges": 0,
+        "false_merge_rate": 0.0,
+        "false_merge_rate_ci95": [
+          0.0,
+          0.031
+        ]
+      },
+      "test": {
+        "pairs": 83,
+        "false_merges": 1,
+        "false_merge_rate": 0.012,
+        "false_merge_rate_ci95": [
+          0.0021,
+          0.0651
+        ]
+      }
+    }
+  },
+  "synthetic_tables": {
+    "validation": {
+      "records": 900,
+      "entities": 300,
+      "true_pairs": 900,
+      "candidate_pairs": 3364,
+      "blocking_recall": 0.99,
+      "threshold_table": {
+        "0.3": {
+          "true_positives": 891,
+          "false_positives": 32,
+          "false_negatives": 9,
+          "precision": 0.9653,
+          "recall": 0.99,
+          "f1": 0.9775
+        },
+        "0.35": {
+          "true_positives": 891,
+          "false_positives": 32,
+          "false_negatives": 9,
+          "precision": 0.9653,
+          "recall": 0.99,
+          "f1": 0.9775
+        },
+        "0.4": {
+          "true_positives": 891,
+          "false_positives": 28,
+          "false_negatives": 9,
+          "precision": 0.9695,
+          "recall": 0.99,
+          "f1": 0.9797
+        },
+        "0.45": {
+          "true_positives": 891,
+          "false_positives": 27,
+          "false_negatives": 9,
+          "precision": 0.9706,
+          "recall": 0.99,
+          "f1": 0.9802
+        },
+        "0.5": {
+          "true_positives": 891,
+          "false_positives": 27,
+          "false_negatives": 9,
+          "precision": 0.9706,
+          "recall": 0.99,
+          "f1": 0.9802
+        },
+        "0.55": {
+          "true_positives": 891,
+          "false_positives": 24,
+          "false_negatives": 9,
+          "precision": 0.9738,
+          "recall": 0.99,
+          "f1": 0.9818
+        },
+        "0.6": {
+          "true_positives": 891,
+          "false_positives": 24,
+          "false_negatives": 9,
+          "precision": 0.9738,
+          "recall": 0.99,
+          "f1": 0.9818
+        },
+        "0.65": {
+          "true_positives": 891,
+          "false_positives": 24,
+          "false_negatives": 9,
+          "precision": 0.9738,
+          "recall": 0.99,
+          "f1": 0.9818
+        },
+        "0.7": {
+          "true_positives": 891,
+          "false_positives": 24,
+          "false_negatives": 9,
+          "precision": 0.9738,
+          "recall": 0.99,
+          "f1": 0.9818
+        },
+        "0.75": {
+          "true_positives": 891,
+          "false_positives": 24,
+          "false_negatives": 9,
+          "precision": 0.9738,
+          "recall": 0.99,
+          "f1": 0.9818
+        },
+        "0.8": {
+          "true_positives": 891,
+          "false_positives": 23,
+          "false_negatives": 9,
+          "precision": 0.9748,
+          "recall": 0.99,
+          "f1": 0.9824
+        },
+        "0.85": {
+          "true_positives": 886,
+          "false_positives": 23,
+          "false_negatives": 14,
+          "precision": 0.9747,
+          "recall": 0.9844,
+          "f1": 0.9795
+        },
+        "0.9": {
+          "true_positives": 878,
+          "false_positives": 23,
+          "false_negatives": 22,
+          "precision": 0.9745,
+          "recall": 0.9756,
+          "f1": 0.975
+        },
+        "0.95": {
+          "true_positives": 858,
+          "false_positives": 19,
+          "false_negatives": 42,
+          "precision": 0.9783,
+          "recall": 0.9533,
+          "f1": 0.9657
+        },
+        "0.97": {
+          "true_positives": 833,
+          "false_positives": 16,
+          "false_negatives": 67,
+          "precision": 0.9812,
+          "recall": 0.9256,
+          "f1": 0.9525
+        },
+        "0.99": {
+          "true_positives": 719,
+          "false_positives": 9,
+          "false_negatives": 181,
+          "precision": 0.9876,
+          "recall": 0.7989,
+          "f1": 0.8833
+        }
+      }
+    },
+    "test": {
+      "records": 900,
+      "entities": 300,
+      "true_pairs": 900,
+      "candidate_pairs": 3383,
+      "blocking_recall": 0.9878,
+      "threshold_table": {
+        "0.3": {
+          "true_positives": 889,
+          "false_positives": 48,
+          "false_negatives": 11,
+          "precision": 0.9488,
+          "recall": 0.9878,
+          "f1": 0.9679
+        },
+        "0.35": {
+          "true_positives": 889,
+          "false_positives": 45,
+          "false_negatives": 11,
+          "precision": 0.9518,
+          "recall": 0.9878,
+          "f1": 0.9695
+        },
+        "0.4": {
+          "true_positives": 889,
+          "false_positives": 45,
+          "false_negatives": 11,
+          "precision": 0.9518,
+          "recall": 0.9878,
+          "f1": 0.9695
+        },
+        "0.45": {
+          "true_positives": 889,
+          "false_positives": 39,
+          "false_negatives": 11,
+          "precision": 0.958,
+          "recall": 0.9878,
+          "f1": 0.9726
+        },
+        "0.5": {
+          "true_positives": 889,
+          "false_positives": 38,
+          "false_negatives": 11,
+          "precision": 0.959,
+          "recall": 0.9878,
+          "f1": 0.9732
+        },
+        "0.55": {
+          "true_positives": 889,
+          "false_positives": 35,
+          "false_negatives": 11,
+          "precision": 0.9621,
+          "recall": 0.9878,
+          "f1": 0.9748
+        },
+        "0.6": {
+          "true_positives": 889,
+          "false_positives": 34,
+          "false_negatives": 11,
+          "precision": 0.9632,
+          "recall": 0.9878,
+          "f1": 0.9753
+        },
+        "0.65": {
+          "true_positives": 888,
+          "false_positives": 34,
+          "false_negatives": 12,
+          "precision": 0.9631,
+          "recall": 0.9867,
+          "f1": 0.9748
+        },
+        "0.7": {
+          "true_positives": 888,
+          "false_positives": 33,
+          "false_negatives": 12,
+          "precision": 0.9642,
+          "recall": 0.9867,
+          "f1": 0.9753
+        },
+        "0.75": {
+          "true_positives": 887,
+          "false_positives": 33,
+          "false_negatives": 13,
+          "precision": 0.9641,
+          "recall": 0.9856,
+          "f1": 0.9747
+        },
+        "0.8": {
+          "true_positives": 886,
+          "false_positives": 31,
+          "false_negatives": 14,
+          "precision": 0.9662,
+          "recall": 0.9844,
+          "f1": 0.9752
+        },
+        "0.85": {
+          "true_positives": 884,
+          "false_positives": 25,
+          "false_negatives": 16,
+          "precision": 0.9725,
+          "recall": 0.9822,
+          "f1": 0.9773
+        },
+        "0.9": {
+          "true_positives": 875,
+          "false_positives": 15,
+          "false_negatives": 25,
+          "precision": 0.9831,
+          "recall": 0.9722,
+          "f1": 0.9777
+        },
+        "0.95": {
+          "true_positives": 849,
+          "false_positives": 9,
+          "false_negatives": 51,
+          "precision": 0.9895,
+          "recall": 0.9433,
+          "f1": 0.9659
+        },
+        "0.97": {
+          "true_positives": 832,
+          "false_positives": 9,
+          "false_negatives": 68,
+          "precision": 0.9893,
+          "recall": 0.9244,
+          "f1": 0.9558
+        },
+        "0.99": {
+          "true_positives": 676,
+          "false_positives": 4,
+          "false_negatives": 224,
+          "precision": 0.9941,
+          "recall": 0.7511,
+          "f1": 0.8557
+        }
+      }
+    }
+  },
+  "cluster_test": {
+    "cluster_count": 309,
+    "true_entity_count": 300,
+    "singleton_count": 11,
+    "largest_cluster_size": 9,
+    "pairwise": {
+      "true_positives": 878,
+      "false_positives": 27,
+      "false_negatives": 22,
+      "precision": 0.9702,
+      "recall": 0.9756,
+      "f1": 0.9729
+    },
+    "bcubed": {
+      "precision": 0.9933,
+      "recall": 0.9837,
+      "f1": 0.9885
+    },
+    "over_merged_clusters": 1
+  },
+  "operational_full_file": {
+    "records": 9996,
+    "candidate_pairs": 258029,
+    "possible_pairs": 49955010,
+    "reduction_pct": 99.483,
+    "match_pairs": 795,
+    "uncertain_pairs": 153,
+    "non_match_pairs": 257081,
+    "clusters": 9436,
+    "singletons": 8976,
+    "largest_cluster": 7,
+    "top_cluster_sizes": [
+      7,
+      7,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      4
+    ],
+    "clusters_over_10": 0,
+    "records_in_multi_clusters": 1020,
+    "weak_pairs_recovered_all": [
+      37,
+      66
+    ],
+    "weak_pairs_recovered_heldout": [
+      21,
+      36
+    ],
+    "match_seconds": 8.3
+  },
+  "audit_sample": [
+    {
+      "score": 0.951468,
+      "a_customer_name": "Amazon.com, Inc.",
+      "a_address": "410 Terry Ave N",
+      "a_city": "Seattle",
+      "a_postal_code": "98109",
+      "a_country": "Us",
+      "b_customer_name": "Amazon.com Inc (do Not Delete)",
+      "b_address": "410 Terry Ave N",
+      "b_city": "Seattle",
+      "b_postal_code": "981095210",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.994094,
+      "a_customer_name": "Agile 1",
+      "a_address": "6373 San Ignacio Ave",
+      "a_city": "San Jose",
+      "a_postal_code": "95119",
+      "a_country": "Us",
+      "b_customer_name": "Agile Software - 88568",
+      "b_address": "6373 San Ignacio Blvd.",
+      "b_city": "San Jose",
+      "b_postal_code": "95119",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.828383,
+      "a_customer_name": "Advocate Healthcare",
+      "a_address": "1775 Dempster Street",
+      "a_city": "Park Ridge",
+      "a_postal_code": "60068",
+      "a_country": "Us",
+      "b_customer_name": "Advocate Lutheran General Hospital",
+      "b_address": "1875 Dempster St Side",
+      "b_city": "Park Ridge",
+      "b_postal_code": "60068",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.865341,
+      "a_customer_name": "American Electric And Data Inc",
+      "a_address": null,
+      "a_city": "New Melle",
+      "a_postal_code": "63365",
+      "a_country": "Us",
+      "b_customer_name": "American Electric & Data, Inc.",
+      "b_address": "112 Saint Charles St",
+      "b_city": "New Melle",
+      "b_postal_code": "63365",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.670507,
+      "a_customer_name": "Ajmal And Sons",
+      "a_address": "3/24 1st Floor Kamal Mansion",
+      "a_city": "Mumbai",
+      "a_postal_code": "400015",
+      "a_country": "In",
+      "b_customer_name": "Ajmal And Sons Private Limited",
+      "b_address": "2nd Pasta Lane, Ajmal Perfumes",
+      "b_city": "Mumbai",
+      "b_postal_code": "400079",
+      "b_country": "In"
+    },
+    {
+      "score": 0.742188,
+      "a_customer_name": "Air Systems Engineering",
+      "a_address": "South Pine Street",
+      "a_city": "Tacoma",
+      "a_postal_code": null,
+      "a_country": "Au",
+      "b_customer_name": "Air Systems Engineering, Inc.",
+      "b_address": "3602 S Pine St",
+      "b_city": "Tacoma",
+      "b_postal_code": "98409",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.999239,
+      "a_customer_name": "Air Liquide Industrial Sid 160719",
+      "a_address": "11754 Road 120",
+      "a_city": "Pixley",
+      "a_postal_code": "93256",
+      "a_country": "Us",
+      "b_customer_name": "Air Liquide Industrial Sid 160719",
+      "b_address": "11754 Road 120",
+      "b_city": "Pixley",
+      "b_postal_code": "93256",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.998351,
+      "a_customer_name": "Ags",
+      "a_address": "224 Nicanor Garcia",
+      "a_city": "Makati City",
+      "a_postal_code": "1209",
+      "a_country": "Ph",
+      "b_customer_name": "Ags Inc",
+      "b_address": "224 Nicanor Garcia",
+      "b_city": "Makati",
+      "b_postal_code": "1209",
+      "b_country": "Ph"
+    },
+    {
+      "score": 0.984501,
+      "a_customer_name": "American Consulate General",
+      "a_address": "01-May",
+      "a_city": "Kolkata",
+      "a_postal_code": "700071",
+      "a_country": "In",
+      "b_customer_name": "American Consulate General Kolkata",
+      "b_address": "Gso/procurement, American Center",
+      "b_city": "Kolkatta",
+      "b_postal_code": "700071",
+      "b_country": "In"
+    },
+    {
+      "score": 0.743398,
+      "a_customer_name": "Agc Singapore Services Pte Ltd",
+      "a_address": "460 Alexandra Road",
+      "a_city": "Singapore",
+      "a_postal_code": "119963",
+      "a_country": "Sg",
+      "b_customer_name": "Ajinomoto (singapore) Private Limited",
+      "b_address": "460 Alexandra Road",
+      "b_city": "Singapore",
+      "b_postal_code": "119963",
+      "b_country": "Sg"
+    },
+    {
+      "score": 0.814353,
+      "a_customer_name": "Amc Microsystem Pte Ltd",
+      "a_address": "1 Rochor Canal Road",
+      "a_city": "Singapore",
+      "a_postal_code": "188504",
+      "a_country": "Sg",
+      "b_customer_name": "Amconics Technology Pte Ltd",
+      "b_address": "1 Rochor Canal Road",
+      "b_city": "Singapore",
+      "b_postal_code": "188504",
+      "b_country": "Sg"
+    },
+    {
+      "score": 0.908499,
+      "a_customer_name": "American Electrical Contractors",
+      "a_address": "3405 Pearson Rd",
+      "a_city": "Memphis",
+      "a_postal_code": "38118",
+      "a_country": "Us",
+      "b_customer_name": "American Hub",
+      "b_address": null,
+      "b_city": "Memphis",
+      "b_postal_code": "38118",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.977655,
+      "a_customer_name": "Allstate 0032",
+      "a_address": "75 Executive Parkway",
+      "a_city": "Hudson",
+      "a_postal_code": "44237",
+      "a_country": "Us",
+      "b_customer_name": "Allstate Insurance Co.",
+      "b_address": "75 Executive Pkwy",
+      "b_city": "Hudson",
+      "b_postal_code": "44237",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.998989,
+      "a_customer_name": "Africom",
+      "a_address": "Cmr 489 Box 694",
+      "a_city": "Apo",
+      "a_postal_code": "9751",
+      "a_country": "Us",
+      "b_customer_name": "Africom",
+      "b_address": "Cmr 489 Box 694",
+      "b_city": "Apo Ae",
+      "b_postal_code": "9751",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.993661,
+      "a_customer_name": "Alpine Power Systems",
+      "a_address": "24355 Capitol Ste 1",
+      "a_city": "Redford",
+      "a_postal_code": "482392466",
+      "a_country": "Us",
+      "b_customer_name": "Alpine Power Systems",
+      "b_address": "24355 Capitol",
+      "b_city": "Redford",
+      "b_postal_code": "48239",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.930117,
+      "a_customer_name": "Alfa Insurance Corp",
+      "a_address": "2108 E South Blvd",
+      "a_city": "Montgomery",
+      "a_postal_code": "36116",
+      "a_country": "Us",
+      "b_customer_name": "All Mutual Insurance Co",
+      "b_address": "2108 E South Blvd",
+      "b_city": "Montgomery",
+      "b_postal_code": "36116",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.696538,
+      "a_customer_name": "Aec Online Inc",
+      "a_address": "1111 3rd Ave Ste 700",
+      "a_city": "Seattle",
+      "a_postal_code": "98101",
+      "a_country": "Us",
+      "b_customer_name": "Affiliated Engineers Nw, Inc.",
+      "b_address": "1601 5th Ave Ste 1400",
+      "b_city": "Seattle",
+      "b_postal_code": "98101",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.960153,
+      "a_customer_name": "Aecom India Private Limited",
+      "a_address": "9th Floor, Infinity Tower - C",
+      "a_city": "Gurgaon",
+      "a_postal_code": "122002",
+      "a_country": "In",
+      "b_customer_name": "Akorn India Private Limited",
+      "b_address": "4th Floor, Building-9b",
+      "b_city": "Gurgaon",
+      "b_postal_code": "122002",
+      "b_country": "In"
+    },
+    {
+      "score": 0.999077,
+      "a_customer_name": "Afs Technologies",
+      "a_address": "2141 E Highland Ave Ste 200",
+      "a_city": "Phoenix",
+      "a_postal_code": "85016",
+      "a_country": "Us",
+      "b_customer_name": "Afs Technologies, Inc.",
+      "b_address": "2141 E Highland Ave Ste 200",
+      "b_city": "Phoenix",
+      "b_postal_code": "85016",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.999239,
+      "a_customer_name": "Air Liquide Industrial Sid 160719",
+      "a_address": "11754 Road 120",
+      "a_city": "Pixley",
+      "a_postal_code": "93256",
+      "a_country": "Us",
+      "b_customer_name": "Air Liquide Industrial Sid 160719",
+      "b_address": "11754 Road 120",
+      "b_city": "Pixley",
+      "b_postal_code": "93256",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.998515,
+      "a_customer_name": "Air Liquide Industrial Sid 160719",
+      "a_address": "11754 Road 120",
+      "a_city": "Pixley",
+      "a_postal_code": "93256",
+      "a_country": "Us",
+      "b_customer_name": "Air Liquide Industrial Sid 160719",
+      "b_address": "1754 Road 120",
+      "b_city": "Pixley",
+      "b_postal_code": "93256",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.999191,
+      "a_customer_name": "Alliance Laundry Systems",
+      "a_address": "221 Shepard St",
+      "a_city": "Ripon",
+      "a_postal_code": "54971",
+      "a_country": "Us",
+      "b_customer_name": "Alliance Laundry Systems",
+      "b_address": "221 Shepard St.",
+      "b_city": "Ripon",
+      "b_postal_code": "54971",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.89493,
+      "a_customer_name": "Alta Bates Summit Medical Center",
+      "a_address": "450 30th St",
+      "a_city": "Oakland",
+      "a_postal_code": "94609",
+      "a_country": "Us",
+      "b_customer_name": "Alta Bates - Sutter Health",
+      "b_address": "350 30th St",
+      "b_city": "Oakland",
+      "b_postal_code": "94609",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.976844,
+      "a_customer_name": "Adv Technology And Engineering Services",
+      "a_address": "37 2",
+      "a_city": "Pune",
+      "a_postal_code": "0",
+      "a_country": "In",
+      "b_customer_name": "Adv Technology And Engineering Services",
+      "b_address": "Rutughand, Flat No 3, S No 50/19//b/1",
+      "b_city": "Pune",
+      "b_postal_code": "411030",
+      "b_country": "In"
+    },
+    {
+      "score": 0.999239,
+      "a_customer_name": "All-tasks Computer Services Pty Ltd",
+      "a_address": "566 Somerville Rd",
+      "a_city": "Sunshine West",
+      "a_postal_code": "3020",
+      "a_country": "Au",
+      "b_customer_name": "All-tasks Computer Services Pty Ltd",
+      "b_address": "566 Somerville Rd",
+      "b_city": "Sunshine West",
+      "b_postal_code": "3020",
+      "b_country": "Au"
+    },
+    {
+      "score": 0.979487,
+      "a_customer_name": "Airevac",
+      "a_address": "1800 Air Medical Dr Ste 1",
+      "a_city": "West Plains",
+      "a_postal_code": "65775",
+      "a_country": "Us",
+      "b_customer_name": "Air Evac Ems",
+      "b_address": "1800 Air Medical Dr",
+      "b_city": "West Plains",
+      "b_postal_code": "65775",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.999239,
+      "a_customer_name": "American Ambulance Sid 54488",
+      "a_address": "4555 East Hamilton",
+      "a_city": "Fresno",
+      "a_postal_code": "93702",
+      "a_country": "Us",
+      "b_customer_name": "American Ambulance Sid 54488",
+      "b_address": "4555 East Hamilton",
+      "b_city": "Fresno",
+      "b_postal_code": "93702",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.81861,
+      "a_customer_name": "Amazon Data Services, Inc.",
+      "a_address": "410 Terry Avenue North",
+      "a_city": "Seattle",
+      "a_postal_code": "98109",
+      "a_country": "Us",
+      "b_customer_name": "Amazon Seattle Aws",
+      "b_address": "410 Terry Ave N",
+      "b_city": "Seattle",
+      "b_postal_code": "98109",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.999239,
+      "a_customer_name": "American Ag Credit Sid 94717",
+      "a_address": "3201 Monte Vista Ave",
+      "a_city": "Turlock",
+      "a_postal_code": "95380",
+      "a_country": "Us",
+      "b_customer_name": "American Ag Credit Sid 94717",
+      "b_address": "3201 Monte Vista Ave",
+      "b_city": "Turlock",
+      "b_postal_code": "95380",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.997807,
+      "a_customer_name": "Alexian Brothers Medical",
+      "a_address": "800 W Biesterfield Road Center",
+      "a_city": "Elk Grove Village",
+      "a_postal_code": "60007",
+      "a_country": "Us",
+      "b_customer_name": "Alexian Brothers Medical Center Inc",
+      "b_address": "810 Biesterfield Rd",
+      "b_city": "Elk Grove Village",
+      "b_postal_code": "60007",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.998174,
+      "a_customer_name": "Air Liquide Industrial Sid 160719",
+      "a_address": "11754 Road 120",
+      "a_city": "Pixley",
+      "a_postal_code": "93256",
+      "a_country": "Us",
+      "b_customer_name": "Air Liquide Industrial Us",
+      "b_address": "11754 Road 120",
+      "b_city": "Pixley",
+      "b_postal_code": "93256",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.995819,
+      "a_customer_name": "Allan Ics",
+      "a_address": "2021 Beulah Ave",
+      "a_city": "East Troy",
+      "a_postal_code": "53120",
+      "a_country": "Us",
+      "b_customer_name": "Allan Integrated Control",
+      "b_address": "2021 Beulah Ave",
+      "b_city": "East Troy",
+      "b_postal_code": "53120",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.879462,
+      "a_customer_name": "Alpine Access, Inc.",
+      "a_address": "1290 N Broadway Ste 1400",
+      "a_city": "Denver",
+      "a_postal_code": "80203",
+      "a_country": "Us",
+      "b_customer_name": "Alps Holdings, Inc.",
+      "b_address": "1290 N Broadway Ste 1100",
+      "b_city": "Denver",
+      "b_postal_code": "80203",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.779829,
+      "a_customer_name": "Ajvw Distribution (s) Pte Ltd",
+      "a_address": "1 Rochor Canal Road",
+      "a_city": "Singapore",
+      "a_postal_code": "188504",
+      "a_country": "Sg",
+      "b_customer_name": "Alltronic Computer (s) Pte Ltd",
+      "b_address": "1 Rochor Canal Road",
+      "b_city": "Singapore",
+      "b_postal_code": "188504",
+      "b_country": "Sg"
+    },
+    {
+      "score": 0.963865,
+      "a_customer_name": "Advanced Sys-tek Private Limited",
+      "a_address": "Plot No.299/300, Gidc, Makarpura",
+      "a_city": "Vadodara",
+      "a_postal_code": "390010",
+      "a_country": "In",
+      "b_customer_name": "Advance Systek Private Limited",
+      "b_address": "299-300, G.i.d.c",
+      "b_city": "Vadodara",
+      "b_postal_code": "390010",
+      "b_country": "In"
+    },
+    {
+      "score": 0.757567,
+      "a_customer_name": "American Financial Corporation",
+      "a_address": "580 Walnut St Fl 9",
+      "a_city": "Cincinnati",
+      "a_postal_code": "45202",
+      "a_country": "Us",
+      "b_customer_name": "American Financial Group, It",
+      "b_address": null,
+      "b_city": "Cincinnati",
+      "b_postal_code": "45202",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.923252,
+      "a_customer_name": "Yale/new Haven Hospital",
+      "a_address": "25 Park St",
+      "a_city": "New Haven",
+      "a_postal_code": "6519",
+      "a_country": "Us",
+      "b_customer_name": "Yale-new Haven Hospital Inc",
+      "b_address": "726 Howard Ave",
+      "b_city": "New Haven",
+      "b_postal_code": "6519",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.998764,
+      "a_customer_name": "American Ag Credit Sid 161099",
+      "a_address": "402 Aviation Blvd",
+      "a_city": "Santa Rosa",
+      "a_postal_code": "95403",
+      "a_country": "Us",
+      "b_customer_name": "American Ag Credit Sid 161099 Santa Rosa",
+      "b_address": "400 Aviation Blvd",
+      "b_city": "Santa Rosa",
+      "b_postal_code": "95403",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.681336,
+      "a_customer_name": "Albemarle District Jail",
+      "a_address": null,
+      "a_city": "Elizabeth City",
+      "a_postal_code": "27909",
+      "a_country": "Us",
+      "b_customer_name": "Albemarle Hospital",
+      "b_address": null,
+      "b_city": "Elizabeth City",
+      "b_postal_code": "27909",
+      "b_country": "Us"
+    },
+    {
+      "score": 0.898751,
+      "a_customer_name": "Ahlstrom Nonwovens LLC",
+      "a_address": "26 Canal Bank Rd",
+      "a_city": "Windsor Locks",
+      "a_postal_code": "6096",
+      "a_country": "Us",
+      "b_customer_name": "Ahlstrom Nonwovens LLC",
+      "b_address": "3 Chirnside Road",
+      "b_city": "Windsor Locks",
+      "b_postal_code": "6096",
+      "b_country": "Us"
+    }
+  ],
+  "duns_conflicts": [
+    {
+      "kind": "DUNS",
+      "a": "Alrajhi Bank",
+      "b": "Al Rajhi Banking And Investment Corp Malaysia Bhd"
+    }
+  ],
+  "meta": {
+    "threshold": 0.65,
+    "review_threshold": 0.5,
+    "threshold_calibration": "PROVISIONAL_SYNTHETIC_AND_WEAK_LABELS",
+    "train_seconds": 81.0,
+    "learned_predicates": [
+      "SimplePredicate: (sameSevenCharStartPredicate, customer_name)",
+      "(SimplePredicate: (oneGramFingerprint, address), SimplePredicate: (commonFourGram, city))",
+      "(SimplePredicate: (wholeFieldPredicate, postal_code), SimplePredicate: (nearIntegersPredicate, address), SimplePredicate: (doubleMetaphone, city))",
+      "(SimplePredicate: (alphaNumericPredicate, customer_name), ExistsPredicate: (Exists, address), SimplePredicate: (wholeFieldPredicate, country))"
+    ],
+    "training_pairs": {
+      "match": 2190,
+      "synthetic_match": 2100,
+      "weak_real_match_x3": 30,
+      "distinct": 1082,
+      "distinct_by_kind": {
+        "hard_first_token": 400,
+        "same_name_diff_site": 332,
+        "random": 350
+      }
+    },
+    "weak_labels": {
+      "pairs_total": 66,
+      "by_split": {
+        "train": 30,
+        "validation": 14,
+        "test": 22
+      },
+      "duns_groups": 63,
+      "conflicts_excluded": 1
+    },
+    "records_total": 9996,
+    "synthetic_bases": {
+      "train": 2100,
+      "validation": 900,
+      "test": 900
+    },
+    "total_seconds": 95.3
+  },
+  "assistant_reviewed_calibration": {
+    "label_source": "ASSISTANT_REVIEWED (AI-assigned, NOT human ground truth)",
+    "pairs_total": 160,
+    "decided": 111,
+    "counts": {
+      "UNSURE": 49,
+      "DISTINCT": 54,
+      "MATCH": 57
+    },
+    "weighting": "stratified by V1 score band; each pair weighted pop_band/sample_band",
+    "chosen_threshold": 0.85,
+    "review_threshold": 0.7,
+    "previous_threshold": 0.65,
+    "table": {
+      "0.5": {
+        "precision": 0.6773,
+        "recall": 0.5902,
+        "f0_5": 0.6579,
+        "est_false_merges": 233.9,
+        "est_true_pairs_found": 490.9,
+        "est_true_pairs_missed": 340.9
+      },
+      "0.55": {
+        "precision": 0.6922,
+        "recall": 0.5725,
+        "f0_5": 0.6644,
+        "est_false_merges": 211.8,
+        "est_true_pairs_found": 476.2,
+        "est_true_pairs_missed": 355.6
+      },
+      "0.6": {
+        "precision": 0.6939,
+        "recall": 0.5371,
+        "f0_5": 0.6556,
+        "est_false_merges": 197.1,
+        "est_true_pairs_found": 446.8,
+        "est_true_pairs_missed": 385.0
+      },
+      "0.65": {
+        "precision": 0.7327,
+        "recall": 0.5283,
+        "f0_5": 0.6801,
+        "est_false_merges": 160.3,
+        "est_true_pairs_found": 439.4,
+        "est_true_pairs_missed": 392.4
+      },
+      "0.7": {
+        "precision": 0.7594,
+        "recall": 0.5229,
+        "f0_5": 0.6964,
+        "est_false_merges": 137.8,
+        "est_true_pairs_found": 434.9,
+        "est_true_pairs_missed": 396.9
+      },
+      "0.75": {
+        "precision": 0.7887,
+        "recall": 0.5175,
+        "f0_5": 0.7139,
+        "est_false_merges": 115.3,
+        "est_true_pairs_found": 430.4,
+        "est_true_pairs_missed": 401.4
+      },
+      "0.8": {
+        "precision": 0.8057,
+        "recall": 0.485,
+        "f0_5": 0.7116,
+        "est_false_merges": 97.3,
+        "est_true_pairs_found": 403.4,
+        "est_true_pairs_missed": 428.4
+      },
+      "0.85": {
+        "precision": 0.8249,
+        "recall": 0.4672,
+        "f0_5": 0.7154,
+        "est_false_merges": 82.5,
+        "est_true_pairs_found": 388.7,
+        "est_true_pairs_missed": 443.1
+      },
+      "0.9": {
+        "precision": 0.8422,
+        "recall": 0.3872,
+        "f0_5": 0.682,
+        "est_false_merges": 60.3,
+        "est_true_pairs_found": 322.1,
+        "est_true_pairs_missed": 509.7
+      },
+      "0.95": {
+        "precision": 0.8846,
+        "recall": 0.3517,
+        "f0_5": 0.6789,
+        "est_false_merges": 38.2,
+        "est_true_pairs_found": 292.5,
+        "est_true_pairs_missed": 539.3
+      }
+    },
+    "bootstrap_argmax_threshold_frequency": {
+      "0.55": 2,
+      "0.65": 1,
+      "0.7": 5,
+      "0.75": 164,
+      "0.8": 74,
+      "0.85": 182,
+      "0.9": 16,
+      "0.95": 56
+    },
+    "errors_at_chosen_threshold": 30,
+    "error_causes": {
+      "LOCATION_EVIDENCE_OUTWEIGHS_NAME": 4,
+      "ADDRESS_CONFLICT_PENALISED": 15,
+      "SPARSE_RECORD": 5,
+      "SIMILAR_NAME_DIFFERENT_ENTITY": 5,
+      "NAME_VARIANT_NOT_RECOGNISED": 1
+    },
+    "error_examples": [
+      {
+        "predicted": "MATCH",
+        "score": 0.989,
+        "threshold": 0.85,
+        "label": "DISTINCT",
+        "likely_cause": "LOCATION_EVIDENCE_OUTWEIGHS_NAME",
+        "comparison": {
+          "name_core_tokens_shared": 0,
+          "address_equal": true,
+          "postal_equal": true,
+          "city_equal": true,
+          "country_equal": true,
+          "missing_fields": []
+        },
+        "A": {
+          "customer_name": "Aliments Ultima Yoplait",
+          "address": "2177 Boul Fernand Lafontaine",
+          "city": "Longueuil",
+          "postal_code": "J4G 2V2",
+          "country": "Ca"
+        },
+        "B": {
+          "customer_name": "Aliz\u00e3\u2030",
+          "address": "2177 Boul Fernand Lafontaine",
+          "city": "Longueuil",
+          "postal_code": "J4G 2V2",
+          "country": "Ca"
+        },
+        "rows": null
+      },
+      {
+        "predicted": "MATCH",
+        "score": 0.924,
+        "threshold": 0.85,
+        "label": "DISTINCT",
+        "likely_cause": "LOCATION_EVIDENCE_OUTWEIGHS_NAME",
+        "comparison": {
+          "name_core_tokens_shared": 0,
+          "address_equal": true,
+          "postal_equal": true,
+          "city_equal": true,
+          "country_equal": true,
+          "missing_fields": []
+        },
+        "A": {
+          "customer_name": "Aeropuerto Internacional De La Ciudad De Mexico Sa De Cv",
+          "address": "Capit\u00e3\uf181n Carlos Le\u00e3\u201cn 117 S/n",
+          "city": "Ciudad De M\u00e3\u2030xico",
+          "postal_code": "15620",
+          "country": "Mx"
+        },
+        "B": {
+          "customer_name": "Aeropuertos Y Servicios Auxiliares",
+          "address": "Capit\u00e3\uf181n Carlos Le\u00e3\u201cn 117 S/n",
+          "city": "Ciudad De M\u00e3\u2030xico",
+          "postal_code": "15620",
+          "country": "Mx"
+        },
+        "rows": null
+      },
+      {
+        "predicted": "NON-MATCH",
+        "score": 0.553,
+        "threshold": 0.85,
+        "label": "MATCH",
+        "likely_cause": "ADDRESS_CONFLICT_PENALISED",
+        "comparison": {
+          "name_core_tokens_shared": 3,
+          "address_equal": false,
+          "postal_equal": false,
+          "city_equal": true,
+          "country_equal": true,
+          "missing_fields": []
+        },
+        "A": {
+          "customer_name": "American Family Insurance",
+          "address": "302 N Walbridge Ave",
+          "city": "Madison",
+          "postal_code": "53714",
+          "country": "Us"
+        },
+        "B": {
+          "customer_name": "American Family Insurance",
+          "address": "6000 American Pkwy",
+          "city": "Madison",
+          "postal_code": "53783",
+          "country": "Us"
+        },
+        "rows": null
+      },
+      {
+        "predicted": "NON-MATCH",
+        "score": 0.587,
+        "threshold": 0.85,
+        "label": "MATCH",
+        "likely_cause": "ADDRESS_CONFLICT_PENALISED",
+        "comparison": {
+          "name_core_tokens_shared": 1,
+          "address_equal": false,
+          "postal_equal": true,
+          "city_equal": false,
+          "country_equal": true,
+          "missing_fields": []
+        },
+        "A": {
+          "customer_name": "Agilent Technologies Inc",
+          "address": "Cp 11 8 Agilent Technologies Int P Ltd",
+          "city": "Haryana",
+          "postal_code": "122051",
+          "country": "In"
+        },
+        "B": {
+          "customer_name": "Agilent Technologies India Private Limited",
+          "address": "Cp-11, Sector 8",
+          "city": "Gurgaon",
+          "postal_code": "122051",
+          "country": "In"
+        },
+        "rows": null
+      },
+      {
+        "predicted": "NON-MATCH",
+        "score": 0.326,
+        "threshold": 0.85,
+        "label": "MATCH",
+        "likely_cause": "SPARSE_RECORD",
+        "comparison": {
+          "name_core_tokens_shared": 1,
+          "address_equal": false,
+          "postal_equal": false,
+          "city_equal": false,
+          "country_equal": false,
+          "missing_fields": [
+            "address",
+            "city",
+            "postal_code",
+            "country"
+          ]
+        },
+        "A": {
+          "customer_name": "Agfirst",
+          "address": null,
+          "city": "Columbia",
+          "postal_code": "29201",
+          "country": "Us"
+        },
+        "B": {
+          "customer_name": "Agfirst Farm Credit Bank",
+          "address": null,
+          "city": null,
+          "postal_code": null,
+          "country": null
+        },
+        "rows": null
+      },
+      {
+        "predicted": "NON-MATCH",
+        "score": 0.768,
+        "threshold": 0.85,
+        "label": "MATCH",
+        "likely_cause": "ADDRESS_CONFLICT_PENALISED",
+        "comparison": {
+          "name_core_tokens_shared": 1,
+          "address_equal": false,
+          "postal_equal": false,
+          "city_equal": true,
+          "country_equal": true,
+          "missing_fields": [
+            "address"
+          ]
+        },
+        "A": {
+          "customer_name": "Aldine Independent School District",
+          "address": "2520 Ww Thorne Blvd",
+          "city": "Houston",
+          "postal_code": "77073",
+          "country": "Us"
+        },
+        "B": {
+          "customer_name": "Aldine Isd",
+          "address": null,
+          "city": "Houston",
+          "postal_code": "77032",
+          "country": "Us"
+        },
+        "rows": null
+      },
+      {
+        "predicted": "NON-MATCH",
+        "score": 0.799,
+        "threshold": 0.85,
+        "label": "MATCH",
+        "likely_cause": "ADDRESS_CONFLICT_PENALISED",
+        "comparison": {
+          "name_core_tokens_shared": 2,
+          "address_equal": false,
+          "postal_equal": true,
+          "city_equal": true,
+          "country_equal": true,
+          "missing_fields": []
+        },
+        "A": {
+          "customer_name": "Advocate Illinois Masonic",
+          "address": "836 W Wellington Ave",
+          "city": "Chicago",
+          "postal_code": "60657",
+          "country": "Us"
+        },
+        "B": {
+          "customer_name": "Advocate Llinois Masonic",
+          "address": "3000 N Halsted St",
+          "city": "Chicago",
+          "postal_code": "60657",
+          "country": "Us"
+        },
+        "rows": null
+      },
+      {
+        "predicted": "NON-MATCH",
+        "score": 0.565,
+        "threshold": 0.85,
+        "label": "MATCH",
+        "likely_cause": "ADDRESS_CONFLICT_PENALISED",
+        "comparison": {
+          "name_core_tokens_shared": 1,
+          "address_equal": false,
+          "postal_equal": false,
+          "city_equal": true,
+          "country_equal": true,
+          "missing_fields": [
+            "address"
+          ]
+        },
+        "A": {
+          "customer_name": "Aetna Inc",
+          "address": "23 Capitol Ave",
+          "city": "Hartford",
+          "postal_code": "6106",
+          "country": "Us"
+        },
+        "B": {
+          "customer_name": "Aetna, Inc.",
+          "address": null,
+          "city": "Hartford",
+          "postal_code": "6156",
+          "country": "Us"
+        },
+        "rows": null
+      },
+      {
+        "predicted": "MATCH",
+        "score": 0.889,
+        "threshold": 0.85,
+        "label": "DISTINCT",
+        "likely_cause": "SIMILAR_NAME_DIFFERENT_ENTITY",
+        "comparison": {
+          "name_core_tokens_shared": 1,
+          "address_equal": false,
+          "postal_equal": false,
+          "city_equal": true,
+          "country_equal": true,
+          "missing_fields": []
+        },
+        "A": {
+          "customer_name": "Alexandria Dogs",
+          "address": "401 Courthouse Sq",
+          "city": "Alexandria",
+          "postal_code": "22314",
+          "country": "Us"
+        },
+        "B": {
+          "customer_name": "Alexandria Public Schools - Isd 206",
+          "address": ".",
+          "city": "Alexandria",
+          "postal_code": "56308",
+          "country": "Us"
+        },
+        "rows": null
+      },
+      {
+        "predicted": "MATCH",
+        "score": 0.946,
+        "threshold": 0.85,
+        "label": "DISTINCT",
+        "likely_cause": "LOCATION_EVIDENCE_OUTWEIGHS_NAME",
+        "comparison": {
+          "name_core_tokens_shared": 0,
+          "address_equal": true,
+          "postal_equal": true,
+          "city_equal": true,
+          "country_equal": true,
+          "missing_fields": []
+        },
+        "A": {
+          "customer_name": "Alliancebernstein L.p.",
+          "address": "1345 Ave Of The Americas",
+          "city": "New York",
+          "postal_code": "10105",
+          "country": "Us"
+        },
+        "B": {
+          "customer_name": "Allianz Group",
+          "address": "1345 Ave Of The Americas",
+          "city": "New York",
+          "postal_code": "10105",
+          "country": "Us"
+        },
+        "rows": null
+      },
+      {
+        "predicted": "NON-MATCH",
+        "score": 0.707,
+        "threshold": 0.85,
+        "label": "MATCH",
+        "likely_cause": "ADDRESS_CONFLICT_PENALISED",
+        "comparison": {
+          "name_core_tokens_shared": 2,
+          "address_equal": false,
+          "postal_equal": true,
+          "city_equal": false,
+          "country_equal": true,
+          "missing_fields": []
+        },
+        "A": {
+          "customer_name": "Altisource Business Solutions Private Limited",
+          "address": "Pritech Park",
+          "city": "Bengaluru",
+          "postal_code": "560103",
+          "country": "In"
+        },
+        "B": {
+          "customer_name": "Altisource Business Solutions Pvt Limited",
+          "address": "Block Number.12, 4th Floor A Wing",
+          "city": "Bangalore",
+          "postal_code": "560103",
+          "country": "In"
+        },
+        "rows": null
+      },
+      {
+        "predicted": "NON-MATCH",
+        "score": 0.632,
+        "threshold": 0.85,
+        "label": "MATCH",
+        "likely_cause": "NAME_VARIANT_NOT_RECOGNISED",
+        "comparison": {
+          "name_core_tokens_shared": 0,
+          "address_equal": false,
+          "postal_equal": true,
+          "city_equal": true,
+          "country_equal": true,
+          "missing_fields": []
+        },
+        "A": {
+          "customer_name": "Alabama Gas Corp",
+          "address": "2101 6th Ave N Ste 100",
+          "city": "Birmingham",
+          "postal_code": "35203",
+          "country": "Us"
+        },
+        "B": {
+          "customer_name": "Alagasco Pipeline Co Inc",
+          "address": "2101 6th Ave N",
+          "city": "Birmingham",
+          "postal_code": "35203",
+          "country": "Us"
+        },
+        "rows": null
+      },
+      {
+        "predicted": "NON-MATCH",
+        "score": 0.546,
+        "threshold": 0.85,
+        "label": "MATCH",
+        "likely_cause": "ADDRESS_CONFLICT_PENALISED",
+        "comparison": {
+          "name_core_tokens_shared": 2,
+          "address_equal": false,
+          "postal_equal": true,
+          "city_equal": true,
+          "country_equal": true,
+          "missing_fields": []
+        },
+        "A": {
+          "customer_name": "Alstom T & D India Limited",
+          "address": "Raw Material Stores - 381a",
+          "city": "Noida",
+          "postal_code": "201301",
+          "country": "In"
+        },
+        "B": {
+          "customer_name": "Alstom T&d India Limited",
+          "address": "Ground Floor, A-7, Sector 65",
+          "city": "Noida",
+          "postal_code": "201301",
+          "country": "In"
+        },
+        "rows": null
+      },
+      {
+        "predicted": "NON-MATCH",
+        "score": 0.776,
+        "threshold": 0.85,
+        "label": "MATCH",
+        "likely_cause": "ADDRESS_CONFLICT_PENALISED",
+        "comparison": {
+          "name_core_tokens_shared": 1,
+          "address_equal": true,
+          "postal_equal": true,
+          "city_equal": false,
+          "country_equal": true,
+          "missing_fields": []
+        },
+        "A": {
+          "customer_name": "Agilent Technologies Microwave Prod (malaysia) Sdn Bhd",
+          "address": "Bayan Lepas Free Industrial Zone",
+          "city": "Pulau Pinang",
+          "postal_code": "11900",
+          "country": "My"
+        },
+        "B": {
+          "customer_name": "Agilent Technologies (m) Sdn Bhd",
+          "address": "Bayan Lepas Free Industrial Zone",
+          "city": "Bayan Lepas",
+          "postal_code": "11900",
+          "country": "My"
+        },
+        "rows": null
+      },
+      {
+        "predicted": "NON-MATCH",
+        "score": 0.65,
+        "threshold": 0.85,
+        "label": "MATCH",
+        "likely_cause": "ADDRESS_CONFLICT_PENALISED",
+        "comparison": {
+          "name_core_tokens_shared": 2,
+          "address_equal": false,
+          "postal_equal": false,
+          "city_equal": true,
+          "country_equal": true,
+          "missing_fields": []
+        },
+        "A": {
+          "customer_name": "Agere System India Private Limited",
+          "address": "Unit 1, 7th Floor, Itpl,white Field,",
+          "city": "Bengaluru",
+          "postal_code": "560066",
+          "country": "In"
+        },
+        "B": {
+          "customer_name": "Agere Systems India Private Limited",
+          "address": "7th Floor, East Wing Raheja Towers",
+          "city": "Bengaluru",
+          "postal_code": "560001",
+          "country": "In"
+        },
+        "rows": null
+      },
+      {
+        "predicted": "MATCH",
+        "score": 0.892,
+        "threshold": 0.85,
+        "label": "DISTINCT",
+        "likely_cause": "SIMILAR_NAME_DIFFERENT_ENTITY",
+        "comparison": {
+          "name_core_tokens_shared": 1,
+          "address_equal": false,
+          "postal_equal": true,
+          "city_equal": true,
+          "country_equal": true,
+          "missing_fields": []
+        },
+        "A": {
+          "customer_name": "Alliance Fibres Limited",
+          "address": "2028-29, Jash Market & Yarn Market,",
+          "city": "Surat",
+          "postal_code": "395002",
+          "country": "In"
+        },
+        "B": {
+          "customer_name": "Alliance Filaments Limited",
+          "address": "1001-1002, Jash Textile & Yarn Market",
+          "city": "Surat",
+          "postal_code": "395002",
+          "country": "In"
+        },
+        "rows": null
+      }
+    ],
+    "operational_at_new_threshold": {
+      "records": 9996,
+      "candidate_pairs": 258029,
+      "match_pairs": 597,
+      "uncertain_pairs": 153,
+      "non_match_pairs": 257279,
+      "clusters": 9554,
+      "singletons": 9173,
+      "largest_cluster": 7,
+      "top_cluster_sizes": [
+        7,
+        5,
+        5,
+        5,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "clusters_over_10": 0
+    },
+    "caveats": [
+      "Small sample (111 decided pairs); the interval around every figure is wide.",
+      "Labels were assigned by the AI assistant, not by a human steward; a human audit is required before treating them as ground truth.",
+      "Recall is measured only among pairs the blocking step already proposed with score >= 0.20."
+    ]
+  }
+}

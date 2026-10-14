@@ -1,0 +1,179 @@
+{
+  "model_format_version": 1,
+  "training_run_id": "TR-V1-CUSTOMER",
+  "domain": "customer",
+  "model_version": "v1.0.0",
+  "source_dataset_id": "BUNDLED-V1",
+  "er_config_version": "bundled-v1",
+  "match_fields": [
+    "customer_name",
+    "address",
+    "city",
+    "postal_code",
+    "country"
+  ],
+  "field_types": {
+    "customer_name": "String",
+    "address": "String",
+    "city": "String",
+    "postal_code": "Exact",
+    "country": "Exact"
+  },
+  "identifier_fields": [],
+  "name_fields": [
+    "customer_name"
+  ],
+  "threshold": 0.85,
+  "review_threshold": 0.7,
+  "threshold_calibration": "ASSISTANT_REVIEWED_WEIGHTED_F0_5_NOT_HUMAN_VALIDATED",
+  "source_mapping": {
+    "customer_name": "customer_name",
+    "address": "address1_p",
+    "city": "city_p",
+    "state": "state_p",
+    "postal_code": "postal_code_p",
+    "country": "country_p",
+    "duns": "cust_duns_nbr"
+  },
+  "created_at": "2026-10-04T06:33:14.048229+00:00",
+  "dependency_versions": {
+    "python": "3.12.3",
+    "dedupe": "3.0.3",
+    "BTrees": "6.4",
+    "numpy": "2.4.4",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.1",
+    "persistent": "6.8"
+  },
+  "training_summary": {
+    "threshold": 0.85,
+    "review_threshold": 0.7,
+    "threshold_calibration": "ASSISTANT_REVIEWED_WEIGHTED_F0_5_NOT_HUMAN_VALIDATED",
+    "train_seconds": 81.0,
+    "learned_predicates": [
+      "SimplePredicate: (sameSevenCharStartPredicate, customer_name)",
+      "(SimplePredicate: (oneGramFingerprint, address), SimplePredicate: (commonFourGram, city))",
+      "(SimplePredicate: (wholeFieldPredicate, postal_code), SimplePredicate: (nearIntegersPredicate, address), SimplePredicate: (doubleMetaphone, city))",
+      "(SimplePredicate: (alphaNumericPredicate, customer_name), ExistsPredicate: (Exists, address), SimplePredicate: (wholeFieldPredicate, country))"
+    ],
+    "training_pairs": {
+      "match": 2190,
+      "synthetic_match": 2100,
+      "weak_real_match_x3": 30,
+      "distinct": 1082,
+      "distinct_by_kind": {
+        "hard_first_token": 400,
+        "same_name_diff_site": 332,
+        "random": 350
+      }
+    },
+    "weak_labels": {
+      "pairs_total": 66,
+      "by_split": {
+        "train": 30,
+        "validation": 14,
+        "test": 22
+      },
+      "duns_groups": 63,
+      "conflicts_excluded": 1
+    },
+    "records_total": 9996,
+    "synthetic_bases": {
+      "train": 2100,
+      "validation": 900,
+      "test": 900
+    },
+    "total_seconds": 95.3
+  },
+  "evaluation_summary": {
+    "synthetic": {
+      "validation": {
+        "true_positives": 891,
+        "false_positives": 24,
+        "false_negatives": 9,
+        "precision": 0.9738,
+        "recall": 0.99,
+        "f1": 0.9818,
+        "precision_ci95": [
+          0.9613,
+          0.9823
+        ],
+        "recall_ci95": [
+          0.9811,
+          0.9947
+        ],
+        "blocking_recall": 0.99
+      },
+      "test": {
+        "true_positives": 888,
+        "false_positives": 34,
+        "false_negatives": 12,
+        "precision": 0.9631,
+        "recall": 0.9867,
+        "f1": 0.9748,
+        "precision_ci95": [
+          0.9489,
+          0.9735
+        ],
+        "recall_ci95": [
+          0.9768,
+          0.9924
+        ],
+        "blocking_recall": 0.9878
+      }
+    },
+    "weak_real": {
+      "validation": {
+        "true_positives": 10,
+        "false_positives": 4,
+        "false_negatives": 4,
+        "precision": 0.7143,
+        "recall": 0.7143,
+        "f1": 0.7143,
+        "true_negatives": 386,
+        "recall_ci95": [
+          0.4535,
+          0.8828
+        ],
+        "positives": 14,
+        "negatives": 390
+      },
+      "test": {
+        "true_positives": 13,
+        "false_positives": 7,
+        "false_negatives": 9,
+        "precision": 0.65,
+        "recall": 0.5909,
+        "f1": 0.619,
+        "true_negatives": 346,
+        "recall_ci95": [
+          0.3873,
+          0.7674
+        ],
+        "positives": 22,
+        "negatives": 353
+      }
+    },
+    "policy_negatives": {
+      "validation": {
+        "pairs": 120,
+        "false_merges": 0,
+        "false_merge_rate": 0.0,
+        "false_merge_rate_ci95": [
+          0.0,
+          0.031
+        ]
+      },
+      "test": {
+        "pairs": 83,
+        "false_merges": 1,
+        "false_merge_rate": 0.012,
+        "false_merge_rate_ci95": [
+          0.0021,
+          0.0651
+        ]
+      }
+    }
+  },
+  "provenance": "OFFLINE_BUILD scripts/build_v1_models.py"
+}

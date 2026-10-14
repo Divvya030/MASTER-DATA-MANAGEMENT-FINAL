@@ -1,0 +1,40 @@
+fastapi
+uvicorn[standard]
+pandas
+sqlalchemy
+pydantic
+pytest
+httpx<0.28
+openpyxl
+pyarrow
+python-multipart
+
+# --- Entity Resolution (Module 8: train -> match -> cluster) ---
+# dedupe itself declares no upper bounds on its own dependencies (only
+# lower bounds / none at all), so pip will happily install versions of its
+# transitive deps that are NOT actually compatible with dedupe==3.0.3's
+# internal code. These pins are required, not optional, for a fresh
+# `pip install -r requirements.txt` to produce a WORKING dedupe install.
+dedupe==3.0.3
+numpy==2.4.4
+scikit-learn==1.8.0
+
+# THE ROOT-CAUSE PIN: BTrees 6.5 (2026-08-20) removed the byValue() method
+# from every Bucket/BTree family except II/LL (see BTrees CHANGES.rst,
+# "Remove the long deprecated byValue() method..."). dedupe's own
+# canopy_index.py calls results.byValue(...) on an IFBucket (int keys,
+# float values) -- a family NOT in the II/LL exemption -- so ANY BTrees
+# >=6.5 breaks dedupe training with:
+#   AttributeError: 'BTrees.IFBTree.IFBucket' object has no attribute 'byValue'
+# BTrees 6.4 is the newest release that still has byValue() on IFBucket.
+BTrees==6.4
+
+# --- Windows install note (no MSVC toolchain on the target machine) -----------
+# affinegap==1.12, dedupe-levenshtein-search==1.4.5 and pyhacrf==0.1.2 have no
+# prebuilt cp311/cp312 Windows wheels. This repo was deployed with:
+#   * affinegap 1.12: compiled from patched source with zig cc (cp311 .pyd)
+#   * Levenshtein_search: cp311 win_amd64 wheel fetched from PyPI
+#   * pyhacrf: replaced by the vendored pure-Python stub in backend/stubs/pyhacrf
+#     (safe: this app uses String dedupe variables only, never ShortString/CRF)
+# Copy it into the venv after creating it:
+#   <venv>/Scripts/python.exe -c "import sysconfig, shutil; shutil.copytree('stubs/pyhacrf', sysconfig.get_paths()['purelib'] + '/pyhacrf', dirs_exist_ok=True)"
